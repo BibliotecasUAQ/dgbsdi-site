@@ -1,0 +1,109 @@
+* {
+    height: 100%;
+    font-family: 'Raleway', sans-serif;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    min-height: 100%;
+}
+
+.main {
+    position: relative;
+    min-height: 100%;
+    vertical-align: middle;
+    background-image: url(https://bibliotecasuaq.github.io/dgbsdi-site/images/silla.png);
+    background-repeat: no-repeat;
+    background-size: 60%;
+    background-attachment: local;
+    background-position: top right;
+}
+
+.fondo1 {
+    height: 70%;
+    position: absolute;
+    z-index: 2;
+    background: linear-gradient(350deg, rgba(188,226, 219, 0) 35%, rgba(105,163,112,20) 100%); 
+    width: 100%;
+    min-height: 300px;
+}
+
+.fondo2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 70%;
+    position: absolute;
+    z-index: 1;
+    background: linear-gradient(10deg, rgba(151,151,151,0) 40%, rgba(34,99,112,0.8463760504201681) 89%, rgba(188, 226, 219,0.418) 100%); 
+    width: 100%;
+    display: grid;
+    min-height: 300px;
+}
+
+
+h1 {
+    position: absolute;
+    color: black;
+    font-size: 5vw;
+    padding-left: 5%;
+}
+
+
+img {
+    position: relative;
+    float:right;
+    max-width:20%;
+    height:auto;
+    padding-right: 20%;
+    padding-top: 15%;
+    padding-bottom: 0%;
+    opacity: .7;
+    widht: 150px; 
+    hight: 150px;
+    animation-name:entrada;
+     animation-duration: 4s;
+}
+
+
+h1 ::selection {
+    user-select: none;
+    }
+
+@keyframes entrada {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: .7;
+  }
+}
+
+#mensaje {
+    position: relative;
+    display: grid;
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+#aviso {
+    place-items: center;
+    position: absolute;
+    width: 80%;
+    border:solid 0px;
+    border-color: gray;
+    border-radius: 1rem;
+    padding: 10%;
+    padding-top:5%;
+    margin-top: 40%;
+    margin-left: 10%;
+    font-size: 2vw;
+    font-weight:;
+    color: black;
+    max-height: 50%;
+}
+
+#remark {
+    font-size: 200%;
+}
