@@ -27,6 +27,8 @@ body {
     background: linear-gradient(350deg, rgba(188,226, 219, 0) 35%, rgba(105,163,112,20) 100%); 
     width: 100%;
     min-height: 300px;
+    animation-name:entrada;
+    animation-duration: 4s;
 }
 
 .fondo2 {
@@ -40,6 +42,8 @@ body {
     width: 100%;
     display: grid;
     min-height: 300px;
+    animation-name:entrada;
+    animation-duration: 4s;
 }
 
 
