@@ -29,6 +29,7 @@ body {
     min-height: 300px;
     animation-name:entrada;
     animation-duration: 4s;
+    opacity: 0.7;
 }
 
 .fondo2 {
@@ -44,6 +45,7 @@ body {
     min-height: 300px;
     animation-name:entrada;
     animation-duration: 4s;
+    opacity: 0.7;
 }
 
 
