@@ -1,0 +1,38 @@
+<html xmlns="http://www.w3.org/1999/xhtml" ng-app="buscadorApp" class="ng-scope">
+    
+    <head>
+        
+        <style type="text/css">@charset "UTF-8";[ng\:cloak],[ng-cloak],[data-ng-cloak],[x-ng-cloak],.ng-cloak,.x-ng-cloak,.ng-hide:not(.ng-hide-animate){display:none !important;}ng\:form{display:block;}.ng-animate-shim{visibility:hidden;}.ng-anchor{position:absolute;}</style>
+	<link rel="stylesheet" href="https://www.redalyc.org/css/buscador.css">
+	<script src="https://www.redalyc.org/js/angular.js"></script>
+	<script src="https://www.redalyc.org/js/jquery.min.js"></script>
+    <script src="https://www.redalyc.org/js/buscadorAngularJS.js"></script>
+</head> 
+<body ng-controller="buscadorController" id="body" class="ng-scope" style="width: 345px; height: 345px;">
+	<input value="343b" id="tipeCSS" type="hidden" autocomplete="off">
+	<input id="disciplinesVis" type="hidden" autocomplete="off">
+	<input id="paisesVis" type="hidden" autocomplete="off">
+	<img src="https://www.redalyc.org/img/fondo-buscador2.png" id="fondoTop" style="width: 100%; border-radius: 5px;">
+	<img src="https://www.redalyc.org/img/redalyc-buscador-color.png" id="redalyc-buscador">
+	<div id="buscador" style="width: 345px; top:20%">
+		<div class="container-select">
+		<select id="item-seleccionado" name="itemseleccionado" size="1" ng-model="busqueda.tipo" ng-change="cambiarSelect()" class="ng-pristine ng-untouched ng-valid ng-not-empty">
+			<option value="Art" class="ng-binding" selected="selected">Artículos</option>
+			<option value="Aut" class="ng-binding">Autores</option>
+			<option value="Rev" class="ng-binding">Revistas</option>
+			<option value="Are" class="ng-binding">Disciplinas</option>
+			<option value="Ins" class="ng-binding">Instituciones</option>
+			<option value="Pai" class="ng-binding">Países</option>
+		</select>
+		</div>
+		<div class="container-input">
+			<!-- ngIf: busqueda.tipo === 'Art' || busqueda.tipo === 'Aut' || busqueda.tipo === 'Rev' || busqueda.tipo === 'Ins' -->
+            <input id="input-articulo" type="text" name="input-articulo" value="" class="entrada-busqueda ng-pristine ng-untouched ng-valid ng-scope ng-empty" ng-if="busqueda.tipo === 'Art' || busqueda.tipo === 'Aut' || busqueda.tipo === 'Rev' || busqueda.tipo === 'Ins'" ng-model="busqueda.textoABuscar" ng-keypress="($event.which === 13)?irA():0" style="width: 180px !important;"><!-- end ngIf: busqueda.tipo === 'Art' || busqueda.tipo === 'Aut' || busqueda.tipo === 'Rev' || busqueda.tipo === 'Ins' -->
+			<!-- ngIf: busqueda.tipo === 'Art' || busqueda.tipo === 'Aut' || busqueda.tipo === 'Rev' || busqueda.tipo === 'Ins' -->
+            <input id="boton-buscar-articulo" type="image" src="https://www.redalyc.org/img/buscador-institucionmdpi.png" name="boton-buscar-articulo" alt="Buscar en Redalyc" ng-if="busqueda.tipo === 'Art' || busqueda.tipo === 'Aut' || busqueda.tipo === 'Rev' || busqueda.tipo === 'Ins'" ng-click="irA()" class="ng-scope" style="font-weight: bold;font-size: 20px;text-align: left;text-indent: 10%;color: red;left: -30px;top: 5px;position: relative;"><!-- end ngIf: busqueda.tipo === 'Art' || busqueda.tipo === 'Aut' || busqueda.tipo === 'Rev' || busqueda.tipo === 'Ins' -->
+	
+			<!-- ngIf: busqueda.tipo === 'Are' || busqueda.tipo === 'Pai' -->
+		</div>
+	</div>
+ 
+</body></html>
