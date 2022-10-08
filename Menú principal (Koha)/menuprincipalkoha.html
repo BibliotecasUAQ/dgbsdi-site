@@ -1,0 +1,232 @@
+<style>
+@charset "UTF-8";
+.navdgb {
+  background-image: url("https://bibliotecasuaq.github.io/dgbsdi-site/images/BannerHeaderMural.png"); border-radius: 30px; background-position: 0% 40%;font-family: NotoSans,sans-serif;
+  color: white;
+  height: 220px;
+    z-index:100;
+}
+.navdgb a {
+  color: white;
+  text-decoration: none;
+  border-bottom: 2px solid transparent;
+  line-height: 160%;
+  padding-bottom: 5px;
+z-index:100;
+}
+.navdgb a:hover {
+  color: pink;
+  border-bottom: 2px solid pink;
+    z-index:100;
+}
+.navdgb ul {
+  padding-left: 0;
+    z-index:100;
+}
+.navdgb ul li {
+  list-style: none;
+    z-index:100;
+}
+.navdgb__container {
+  max-width: 90%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+    z-index:100;
+}
+.navdgb__container__list {
+  display: flex;
+  flex-direction: row;
+    margin-top: 90px;
+    margin-right: 0px;
+    z-index:100;
+}
+.navdgb__container__list li {
+  padding: 5px;
+  margin: 10px;
+    z-index:100;
+    
+}
+.navdgb__container__list .dropDown::after {
+  content: " ▾ ";
+  display: inline-block;
+  margin-left: 5px;
+    z-index:100;
+}
+.navdgb__container__list--dropDown {
+  display: none;
+  position: absolute;
+  background: #1e6372; opacity: 0.8;
+  padding: 10px;
+    z-index:100;border-radius: 30px;
+}
+
+@media screen and (max-width: 725px) {
+  .navdgb__container {
+    max-width: 98%;
+  }
+  .navdgb__container #hamburgerToggle {
+    position: absolute;
+    right: 1%;
+    top: 25px;
+    padding: 95px 65px 10px 0px;
+  }
+  .navdgb__container #hamburgerToggle:hover {
+    color: none;
+    border-bottom: 2px solid transparent;
+  }
+  .navdgb__container #hamburgerToggle span, .navdgb__container #hamburgerToggle span::before, .navdgb__container #hamburgerToggle span::after {
+    content: "";
+    height: 5px;
+    width: 35px;
+    background: white;
+    position: absolute;
+    display: block;
+    transition: all 0.3s ease-in-out;
+  }
+  .navdgb__container #hamburgerToggle span:before {
+    top: -10px;
+  }
+  .navdgb__container #hamburgerToggle span:after {
+    bottom: -10px;
+  }
+  .navdgb__container #hamburgerToggle.active span {
+    background-color: transparent;
+  }
+  .navdgb__container #hamburgerToggle.active span:before, .navdgb__container #hamburgerToggle.active span:after {
+    top: 0;
+  }
+  .navdgb__container #hamburgerToggle.active span:before {
+    transform: rotate(45deg);
+  }
+  .navdgb__container #hamburgerToggle.active span:after {
+    transform: rotate(-45deg);
+  }
+  .navdgb__container__list {
+    display: none;
+    position: absolute;
+    background: #1e6372; opacity: 0.8;
+    padding: 20px;
+    width: fit-content;
+    left: auto;
+      right: 0;
+      margin-right: 8px;
+    top: 65px;
+    text-align: center;border-radius: 30px;
+  }
+  .navdgb__container__list--dropDown {
+    display: block;
+    position: relative;
+  }
+  .navdgb__container__list li {
+    padding: 5px 0 5px 5px;
+    margin: 10px 0 10px 20px;
+  }
+}
+@media screen and (min-width: 725px) {
+  .navdgb__container__list {
+    display: flex !important;
+    flex-direction: row;
+  }
+}
+@media screen and (max-width: 725px) {
+    .navdgb__container__logo {
+          display: flex;
+  justify-content: center;width: 100%;
+    }
+    }
+</style>
+<section class="navdgb">
+<div class="navdgb__container">
+<div class="navdgb__container__logo">
+<h1><img src="https://bibliotecasuaq.github.io/dgbsdi-site/images/LogoUAQ.png" width="50" alt="" style="display: inline-block; margin-left: auto; margin-right: 10px; margin-top: 80px; filter: brightness(0) invert(1);" /><img src="https://bibliotecasuaq.github.io/dgbsdi-site/images/LogoDGBSDInegro.png" style="display: inline-block; margin-bottom: 10px; margin-top: 85px; filter: brightness(0) invert(1);" width="130" /></h1>
+</div>
+<navdgb>
+<div class="hamburger"><a id="hamburgerToggle" href="#"> <span></span> </a></div>
+<ul class="navdgb__container__list">
+<li><a href="http://acervo.uaq.mx/">Inicio</a></li>
+<li><a href="#" class="dropDown">Con&oacute;cenos</a>
+<ul class="navdgb__container__list--dropDown">
+<li><a href="#">Qui&eacute;nes somos</a></li>
+<li><a href="#">Organigrama</a></li>
+<li><a href="#">Directorio</a></li>
+<li><a href="#">Estad&iacute;sticas</a></li>
+<li><a href="#">Documentaci&oacute;n</a></li>
+</ul>
+</li>
+<li><a class="dropDown" href="#">Servicios</a>
+<ul class="navdgb__container__list--dropDown">
+<li><a href="#">Registro en l&iacute;nea</a></li>
+<li><a href="#">Consulta en sala</a></li>
+<li><a href="#">Pr&eacute;stamo a domicilio</a></li>
+<li><a href="#">Carta de no adeudo</a></li>
+<li><a href="#">Pr&eacute;stamo interbibliotecario</a></li>
+<li><a href="#">Servicios de referencia</a></li>
+<li><a href="#">Entrega de tesis</a></li>
+<li><a href="#">Egresados</a></li>
+<li><a href="#">Cursos</a></li>
+<li><a href="#">Solicitud de material</a></li>
+<li><a href="#">Biblioteca digital</a></li>
+</ul>
+</li>
+<li><a class="dropDown" href="#">Recursos</a>
+<ul class="navdgb__container__list--dropDown">
+<li><a href="https://elibro.net/es/lc/bibliouaq/">Biblioteca digital eLibro</a></li>
+<li><a href="#">Acceso abierto</a></li>
+<li><a href="#">Conricyt</a></li>
+<li><a href="http://ri-ng.uaq.mx/">Repositorio institucional</a></li>
+</ul>
+</li>
+<li class="lastLi"><a href="https://docs.google.com/forms/d/e/1FAIpQLSfXV0Skz-AOvYORvYvTirApq1XJPpqEw9NLE1sbYlt1ArElOA/viewform">Buz&oacute;n</a></li>
+</ul>
+</navdgb></div>
+</section>
+<!-- partial -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="/cgi-bin/koha/tools/script.js"></script>
+<script>
+    const navdgb = {};
+
+navdgb.handleDropDown = () => {
+  $('.dropDown').on('click', function (e) {
+    e.stopPropagation();
+    $(this).next().toggle();
+    $('.navdgb__container__list--dropDown').not($(this).next()).hide();
+  });
+};
+
+navdgb.handleClickOffnavdgb = () => {
+  $('html').click(function () {
+    $('.navdgb__container__list--dropDown').hide();
+  });
+};
+
+navdgb.handleHamburgerToggle = () => {
+  $('#hamburgerToggle').on('click', function () {
+    $('navdgb ul').toggle();
+  });
+
+  let x = false;
+  $("#hamburgerToggle").on("click", function () {
+    if (x) {
+      $(this).removeClass("active");
+      x = false;
+    } else {
+      $(this).addClass("active");
+      x = true;
+    }
+  });
+};
+
+navdgb.init = () => {
+  navdgb.handleClickOffnavdgb();
+  navdgb.handleDropDown();
+  navdgb.handleHamburgerToggle();
+};
+
+//document ready
+$(function () {
+  navdgb.init();
+});
+</script>
