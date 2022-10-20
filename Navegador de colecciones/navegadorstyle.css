@@ -21,16 +21,16 @@
     margin-topp: 20px;
     margin-leftp: 20px;
 }
+
         .image {
             display:inline-block;
 	position: relative;
 	width: 160px;
     border-radius:15px;
     box-shadow: 1px -1px 7px 0px;
-    margin:10px;
-    
-}
- @media screen and (max-width:500px){
+    margin:10px;}
+
+    @media screen and (max-width:700px){
         .image {width:55px}
         
     }
@@ -60,6 +60,10 @@
 
 .image__overlay--blur {
 	backdrop-filter: blur(1.5px);
+}
+@media screen and (max-width:700px){
+    .image__overlay--blur{display:none}
+    
 }
 
 .image__overlay--primary {
