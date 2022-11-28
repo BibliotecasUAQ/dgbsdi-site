@@ -16,9 +16,9 @@
     } );
     </script>
 	<script>
-  		function resizeIframe(obj) {
-    		obj.style.height = obj.contentWindow.document.documentElement.scrollHeight + 'px';
- 		 }
+  		$('.iframe-full-height').on('load', function(){
+    this.style.height=this.contentDocument.body.scrollHeight +'px';
+});
 	</script>
 </head>
 <body>
