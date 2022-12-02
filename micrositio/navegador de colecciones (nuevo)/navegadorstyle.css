@@ -1,0 +1,130 @@
+
+.browsecollectioncontainer {
+    justify-content: center;
+    text-align:center; 
+    display: block;
+    align-items: center;
+    width: 900px;
+    max-width:900px;
+    padding-rightp: px;
+    padding-leftp: px;
+    margin-topp: 20px;
+    margin-leftp: 20px;
+    box-shadjow: 0px 0px 3px 0px;
+    border:1px solid #1e6372; 
+    margin:auto;
+    border-radius:15px;
+    padding-bottom: 10px;
+}
+
+.sectiontitle {
+    font-family: NotoSans,sans-serif;
+    font-size:30px;
+    border-bottom:1.5px solid #1e6372; 
+    text-align: left;
+    color:white;
+    width:100%;
+    height:125px;
+    font-weight:bold;
+    paddingp:10px;
+    background-image:url('imagenes/BannerHeaderMural.png');
+    background-colkor:#00889e;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-size: cover;
+    border-radius:11px 11px 0px 0px;
+    line-height:4;
+    text-indent:30px;
+   
+}
+
+
+@media screen and (max-width:700px){
+        .browsecollectioncontainer {
+		width:260px}
+        
+    }
+
+        .image {
+            display:block;
+	position: relative;
+	width: 850px;
+    height:160px;
+    border-radius:15px;
+    box-shadow: 0px 0px 3px 0px;
+    margin:auto; margin-bottom:20px;
+    margin-top:20px;
+    ;
+}
+
+    @media screen and (max-width:700px){
+        .image {width:100px}
+        
+    }
+
+.image__img {
+	display: block;
+	width: 100%;
+    marginx:0 auto;
+    margin-topx:10px;
+    margin-bottoxm:10px;
+    height:160px;
+    border-radius:15px;
+    object-fit: cover;
+   
+}
+
+
+.image__overlay {
+	position: absolute;
+    border-radius:15px;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(0, 0, 0, 0.4);
+	color: #fff;
+	font-family:NotoSans, sans-serif;
+	display: flex;
+	flex-direction: column;
+	align-items:center;
+	justify-content:center;
+	opacity: 0;
+	transition: opacity 0.25s;
+}
+
+.image__overlay--blur {
+	backdrop-filter: blur(1.5px);
+}
+@media screen and (max-width:700px){
+    .image__overlay--blur{display:none}
+    
+}
+
+.image__overlay--primary {
+	background: #009578;
+}
+
+.image__overlay>* {
+	transform: translateY(20px);
+	transition: transform 0.25s;
+}
+
+.image__overlay:hover {
+	opacity: 1;
+}
+
+.image__overlay:hover>* {
+	transform: translateY(0);
+}
+
+.image__title {
+	font-size: 1.1em;
+	font-weight:bold;
+}
+
+.image__description {
+	font-size: 1.1em;
+	margin-top: 0.5em;
+    text-align: center;
+}
