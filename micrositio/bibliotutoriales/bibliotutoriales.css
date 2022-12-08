@@ -18,6 +18,12 @@
    
 }
 
+@media screen and (max-width: 1290px) {
+    .bibliotutorialescontainer {
+      max-width: 75%;
+    }
+}
+
 .sectiontitle {
     font-family: NotoSans,sans-serif;
     font-size:30px;
@@ -43,15 +49,20 @@
     margin-top:10px;
 }
 
+
+
 .frame {
     
-    box-shadow: 0px 0px 3px 0px;
-    border-radius: 15px;
+    box-shadow: 0px 0px 0px 0px;
+    border-radius: 5px;
     widsth:400px;
     width:400px;
-    height:215px;
+    height:205px;
+    wid,th:260px;
+    hefight:150px;
     display:inline-block;
     margin:15px;
+    bordher:1px solid rgb(179, 14, 14);
 
     
 
@@ -78,7 +89,7 @@
     margin-topx:10px;
     margin-bottoxm:10px;
     height:160px;
-    border-radius:15px;
+    border-radius:3px;
     object-fit: cover;
    
 }
