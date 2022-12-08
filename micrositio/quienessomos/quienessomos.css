@@ -30,16 +30,16 @@
    .quienessomostitle a {margin-left:20px}
 
    .imagen-rectangulo-vertical {
-                                background-image: url('imagenes/murallibros.JPG');
-                                background-position:52% 23%;
+                                background-image: url('imagenes/imagenvertical.jpg');
+                                background-position:52% -50%;
                                 background-size:cover;
                                 float:right;
                                 display: inline-block; 
                                 position:relative; 
                                 width: 200px; 
-                                height: 510px; 
+                                height: 560px; 
                                 overflow: hidden; 
-                                border-radius: 10px;
+                                border-radius: 3px;
                                 margin-left:15px;
                                 margin-right:px;
                                 margin-top:30px;
