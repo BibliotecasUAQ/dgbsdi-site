@@ -28,7 +28,8 @@
     text-indent:30px;
    }
    .quienessomostitle a {margin-left:20px;color:white;font-family: NotoSans,sans-serif;
-    font-size:30px;}
+    font-size:30px;line-height:4;
+    text-indent:30px;font-weight:bold;}
 
    .imagen-rectandgulo-vertical {
                                 background-image: url('imagenes/murallibros.JPG');
