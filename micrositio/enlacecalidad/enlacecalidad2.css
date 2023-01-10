@@ -1,13 +1,6 @@
 
    .calidadcontainer {
     text-align: center;
-    width: 305px;
-    margin-left: -8px;
-    height: 268px;
-    /* border: 1px solid #1e6372; */
-    border-radius: 15px;
-    background-image: url(imagenes/BannerHeaderMural.png);
-    margin-top: -8px;
 }
 
 @media screen and (max-width: 1290px) {
