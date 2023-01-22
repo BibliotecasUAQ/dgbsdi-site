@@ -4,7 +4,7 @@
     text-align:center; 
     display: block;
     align-items: center;
-    width: 900px;
+    width: 100%;
     max-width:900px;
     padding-rightp: px;
     padding-leftp: px;
@@ -44,10 +44,6 @@
    
 }
 
-
-@media screen and (max-width:700px){
-        .browsecollectioncontainer {
-		width:260px}
         
     }
 
@@ -68,7 +64,7 @@
     }
 }
     @media screen and (max-width:700px){
-        .image {width:75%;padding:0px}
+        .image {width:95%;padding:0px}
         
     }
 
@@ -80,7 +76,7 @@
     margin-bottoxm:10px;
     height:160px;
     border-radius:15px;
-    object-fit: cover;
+    object-fit: fill;
    
 }
 
