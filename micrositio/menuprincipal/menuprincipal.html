@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+	<title>Menú principal</title>
+    
+    <style>
+    @charset "UTF-8";
+
+    html {margin:0;padding:0}
+    
+    body {
+      margin:0;padding:0;
+    
+    }
+    
+    .navdgb__container {
+      background-image: url("https://bibliotecasuaq.github.io/dgbsdi-site/images/BannerHeaderMural.png"); background-position: 0% 40%;
+      color: white;
+        z-index:100;
+        width:80rem;
+        font-family:Montserrat;
+        font-size:1rem;
+        line-height:1.5;
+        font-weight:700; 
+        margin:0 auto;
+        padding:0;
+    }
+
+
+    
+@media screen and (max-width: 725px){
+              
+.navdgb__container {width: 106%;}
+  }
+
+@media only all and (min-width: 80rem) and (max-width: 84.99rem){
+
+.navdgb__cokntainer {
+    width: 80rem;}
+}
+    
+    
+    .navdgb__container a {
+      color: white;
+      text-decoration: none;
+      border-bottom: 2px solid transparent;
+      line-height: 160%;
+      padding-bottom: 5px;
+    z-index:100;
+    font-family:Montserrat;
+        font-size:1rem;
+        line-height:1.5;
+        font-weight:bold;
+    }
+    .navdgb__container a:hover {
+      color: pink;
+      border-botttom: 2px solid pink;
+        z-index:100;
+        font-family:Montserrat;
+        font-size:1rem;
+        line-height:1.5;
+        font-weight:bold;
+    }
+    .navdgb__container ul {
+      paddidng-left: 0;
+        z-index:100;
+        font-family:Montserrat;
+        font-size:1rem;
+        line-height:1.5;
+        font-weight:400;
+    }
+    .navdgb__container ul li {
+      list-style: none;
+        z-index:100;
+    }
+    .navdgb__container {
+        width:100%;
+      max-width: 100%;
+      display: inline-block;
+        z-index:100;
+        font-family:NotoSans,sans-serif;
+        font-size:1rem;
+        line-height:1.5;
+        font-weight:400;
+        background-image: url("https://bibliotecasuaq.github.io/dgbsdi-site/images/BannerHeaderMural.png"); background-position: 0% 40%;
+     
+      padding-bottom: 5px;
+    z-index:100;
+   
+    }
+    .navdgb__container__logo {
+      display:inline-block;
+      margin: 0.625rem;
+      padding: 0.938rem;
+      margin-left:3rem;
+      margin-bottom:5rem;
+    }
+
+    
+    .navdgb__container__list {
+      display: flex;
+      flex-direction: row wrap;
+      margin:0;
+      padding:0;
+      z-index:100;
+      font-family:Montserrat;
+      font-size:1rem;
+      line-height:1.5;
+      font-weight:400;
+      margin: 0.625rem;
+      padding: 0.938rem;
+      margin-left:2rem;
+    }
+    .navdgb__container__list li {
+      padding: 5px;
+      margin: 10px;
+        z-index:100;
+        font-family:Montserrat;
+        font-size:1rem;
+        line-height:1.5;
+        font-weight:400;font-family:Montserrat;
+        font-size:1rem;
+        line-height:1.5;
+        font-weight:bold;color:white;
+        
+    }
+    .navdgb__container__list li:active {
+    box-shadow: 0 2px 0 rgb(51 51 102 / 20%);}
+
+    .navdgb__container__list .dropDown::after {
+      content: " ▾ ";
+      display: inline-block;
+      margin-left: 5px;
+        z-index:100;
+    }
+    
+    
+    
+    .navdgb__container__list--dropDown {
+      display: none;
+      position: absolute;
+      background:#1e6372;
+      opacity:0.85;
+      padding: 0px;
+        z-index:100;border-radius: .25px 5px;border: 1px solid rgba(51, 51, 102, 0.2);
+    border-radius: 0.25rem;
+    }
+
+    .navdgb__container__list--dropDown li {
+      font-size: .85rem;
+      border-bottom: 1px solid rgba(51, 51, 102, 0.2);
+    }
+    .navdgb__container__list--dropDown li a {
+      font-size: .85rem;}
+    .navdgb__container__list--dropDown li a:hover {
+      font-size: .85rem;}
+    
+    @media screen and (max-width: 725px) {
+      .navdgb__container {
+        max-width: 98%;
+      }
+      .navdgb__container #hamburgerToggle {
+        position: absolute;
+        right: 1%;
+        top: 25px;
+        padding: 95px 65px 10px 0px;
+      }
+      .navdgb__container #hamburgerToggle:hover {
+        color: none;
+        border-bottom: 2px solid transparent;
+      }
+      .navdgb__container #hamburgerToggle span, .navdgb__container #hamburgerToggle span::before, .navdgb__container #hamburgerToggle span::after {
+        content: "";
+        height: 5px;
+        width: 35px;
+        background: white;
+        position: absolute;
+        display: block;
+        transition: all 0.3s ease-in-out;
+      }
+      .navdgb__container #hamburgerToggle span:before {
+        top: -10px;
+      }
+      .navdgb__container #hamburgerToggle span:after {
+        bottom: -10px;
+      }
+      .navdgb__container #hamburgerToggle.active span {
+        background-color: transparent;
+      }
+      .navdgb__container #hamburgerToggle.active span:before, .navdgb__container #hamburgerToggle.active span:after {
+        top: 0;
+      }
+      .navdgb__container #hamburgerToggle.active span:before {
+        transform: rotate(45deg);
+      }
+      .navdgb__container #hamburgerToggle.active span:after {
+        transform: rotate(-45deg);
+      }
+      
+      .navdgb__container__list--dropDown {
+        display: block;
+        position: relative;
+      }
+      
+    
+
+      .navdgb__container__list li {
+        padding: 5px 0 5px 5px;
+        margin: 10px 0 10px 20px;border-bottom: 1px solid rgba(51, 51, 102, 0.2);
+      }
+    }
+    @media screen and (min-width: 725px) {
+      .navdgb__container__list {
+        display: flex !important;
+        flex-direction: row;
+      }
+    }
+    @media screen and (max-width: 725px) {
+        .navdgb__container__logo {
+              display: flex;
+      justify-content: center;width: 100%;margin-left: -17px;
+        }
+        }
+
+
+    </style>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="/cgi-bin/koha/tools/script.js"></script>
+    <script>
+        const navdgb = {};
+    
+    navdgb.handleDropDown = () => {
+      $('.dropDown').on('click', function (e) {
+        e.stopPropagation();
+        $(this).next().toggle();
+        $('.navdgb__container__list--dropDown').not($(this).next()).hide();
+      });
+    };
+    
+    navdgb.handleClickOffnavdgb = () => {
+      $('html').click(function () {
+        $('.navdgb__container__list--dropDown').hide();
+      });
+    };
+    
+    navdgb.handleHamburgerToggle = () => {
+      $('#hamburgerToggle').on('click', function () {
+        $('navdgb ul').toggle();
+      });
+    
+      let x = false;
+      $("#hamburgerToggle").on("click", function () {
+        if (x) {
+          $(this).removeClass("active");
+          x = false;
+        } else {
+          $(this).addClass("active");
+          x = true;
+        }
+      });
+    };
+    
+    navdgb.init = () => {
+      navdgb.handleClickOffnavdgb();
+      navdgb.handleDropDown();
+      navdgb.handleHamburgerToggle();
+    };
+    
+    //document ready
+    $(function () {
+      navdgb.init();
+    });
+    </script>
+    </head>
+    <body>
+    <div class="navdgb__container">
+    <div class="navdgb__container__logo">
+    <img src="https://bibliotecasuaq.github.io/dgbsdi-site/micrositio/menuprincipal/uaq blanco.png" width="" alt="" style="display: inline-block; margin-left: auto; margin-right: 10px; margin-top: 30px;margin:0 auto;max-height:60px" />
+    <img src="https://bibliotecasuaq.github.io/dgbsdi-site/micrositio/menuprincipal/logo svsu blanco.png" width="" alt="" style="display: inline-block; margin-left: auto; margin-right: 10px; margin-top: 30px;margin:0 auto;max-height:60px" />
+    <img src="https://bibliotecasuaq.github.io/dgbsdi-site/micrositio/menuprincipal/logo horizontal blanco.png" style="display: inline-block; margin-bottom: 10px; margin-top: 35px;margin:0 auto;max-height:66px" width=""/>
+  
+    </div>
+    
+    <div class="hamburger"><a id="hamburgerToggle" href="#"> <span></span> </a></div>
+    <ul class="navdgb__container__list">
+    <li><a href="http://acervo.uaq.mx/">Inicio</a></li>
+    <li><a href="#" class="dropDown">Con&oacute;cenos</a>
+    <ul class="navdgb__container__list--dropDown">
+    <li><a href="http://acervo.uaq.mx/cgi-bin/koha/pages.pl?p=quienes_somos">Qui&eacute;nes somos</a></li>
+    <li><a href="#">Organigrama</a></li>
+    <li><a href="http://acervo.uaq.mx/cgi-bin/koha/pages.pl?p=directorio">Directorio</a></li>
+    <li><a href="#">Estad&iacute;sticas</a></li>
+    <li><a href="https://bibliotecas.uaq.mx/index.php/conocenos/documentacion-dgbsdi">Documentaci&oacute;n</a></li>
+    <li><a href="http://acervo.uaq.mx/cgi-bin/koha/pages.pl?p=donaciones">Donaciones</a></li>
+        
+    </ul>
+    </li>
+    <li><a class="dropDown" href="#">Servicios</a>
+    <ul class="navdgb__container__list--dropDown">
+    <li><a href="https://bibliotecas.uaq.mx/index.php/servicios-menu/registro-dgbsdi">Registro en l&iacute;nea</a></li>
+    <li><a href="https://bibliotecas.uaq.mx/index.php/servicios-menu/consulta-en-sala-dgbsdi">Consulta en sala</a></li>
+    <li><a href="https://bibliotecas.uaq.mx/index.php/servicios-menu/prestamos-dgbsdi">Pr&eacute;stamo a domicilio</a></li>
+    <li><a href="https://bibliotecas.uaq.mx/index.php/servicios-menu/carta-dgbsdi">Carta de no adeudo</a></li>
+    <li><a href="https://bibliotecas.uaq.mx/index.php/servicios-menu/interbibliotecario-dgbsdi">Pr&eacute;stamo interbibliotecario</a></li>
+    <li><a href="https://bibliotecas.uaq.mx/index.php/servicios-menu/referencia-dgbsdi">Servicios de referencia</a></li>
+    <li><a href="http://acervo.uaq.mx/cgi-bin/koha/pages.pl?p=entrega_tesis">Entrega de tesis</a></li>
+    <li><a href="http://acervo.uaq.mx/cgi-bin/koha/pages.pl?p=egresados">Egresados</a></li>
+    <li><a href="https://bibliotecas.uaq.mx/index.php/servicios-menu/cursos-dgbsdi">Cursos</a></li>
+    <li><a href="https://docs.google.com/forms/d/e/1FAIpQLSf7lKt07tEeqNoRic3WRR1PS5JY_WNvXU9BOaWoes2FmqH92w/viewform">Solicitud de material</a></li>
+    <li><a href="https://bibliotecas.uaq.mx/index.php/servicios-menu/conoce-biblioteca-digital">Biblioteca digital</a></li>
+    </ul>
+    </li>
+    <li><a class="dropDown" href="#">Recursos</a>
+    <ul class="navdgb__container__list--dropDown">
+    <li><a href="https://elibro.net/es/lc/bibliouaq/">Biblioteca digital eLibro</a></li>
+    <li><a href="http://acervo.uaq.mx/cgi-bin/koha/pages.pl?p=acceso_abierto">Acceso abierto</a></li>
+    <li><a href="https://bibliotecas.uaq.mx/index.php/recursos/bases-dgbsdi">Conricyt</a></li>
+    <li><a href="http://ri-ng.uaq.mx/">Repositorio institucional</a></li>
+    <li><a href="http://acervo.uaq.mx/cgi-bin/koha/pages.pl?p=para_bibliotecarios">Para bibliotecarios</a></li>
+    </ul>
+    </li>
+    <li class="lastLi"><a href="https://docs.google.com/forms/d/e/1FAIpQLSfXV0Skz-AOvYORvYvTirApq1XJPpqEw9NLE1sbYlt1ArElOA/viewform">Buz&oacute;n</a></li>
+    </ul>
+</body>
+    <!-- partial -->
+    
