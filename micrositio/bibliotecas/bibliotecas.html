@@ -1,1 +1,2476 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="refresh" content="60" />
+  <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://kit.fontawesome.com/322f0589ec.js" crossorigin="anonymous"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://kit.fontawesome.com/322f0589ec.js" crossorigin="anonymous"></script>
+ 
+	<title>Bibliotecas</title>
+<style>
+@media screen and (min-width: 768px){
+  #moresearches{display:none}
+  #opac-main-search{display:none}
+  .navdgb {height: 130px!important;}
+  
+}
+#header-region{display:none}
+.navdgb{display:none}
+#opaccredits{display:none}
+#opac-main-search{display:none}
+.widget-visible{display:none!important}
+.tawk-mobile{display:none!important}
+iframe[title="chat widget"] {display:none!important}
+#psjtb1sa99co1698431029563{display:none!important}
+p{font-size:.9rem;font-family:Montserrat;;margin-bottom:1rem;font-weight:400;line-height:1.5;color:#424753!important;text-align:left;display:block;margin-block-start:1em;margin-block-end:1em;margin-inline-start:0px;margin-inline-end:0px;}
+.container{
+    width:100%;
+    margin:0 auto;
+    text-align:justify;
+    width: 100%;
+    max-width:918px;
+    /*padding-right: 15px;*/
+    /*padding-left: 15px;*/
+    margin-right: auto;
+    margin-left: auto;
+    
+    margin-top:-15px}
+	h1{font-family:Montserrat;font-size:2.25rem;margin-bottom: 0.5rem;
+    font-weight: 700;
+    line-height: 1.2;
+    color: #424753!important;margin-top: 0;
+	display: block;
+    margin-block-start: 0.67em;
+    margin-block-end: 0.67em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;text-align: center;}
+	html{-webkit-text-size-adjust: 100%;
+    -webkit-tap-highlight-color: rgba(0,0,0,0);}
+	p2{font-size:1rem;font-family:Montserrat;margin-bottom:1rem;font-weight:400;line-height:1.5;color:#424753!important;text-align:justify;display:block;margin-block-start:1em;margin-block-end:1em;margin-inline-start:0px;margin-inline-end:0px;margin-left:20px;margin-right:20px}
+	p3{font-size:1rem;font-family:Montserrat;margin-bottom:1rem;font-weight:400;line-height:1.5;color:#424753!important;text-align:center;display:block;margin-block-start:1em;margin-block-end:1em;margin-inline-start:0px;margin-inline-end:0px;margin-left:20px;margin-right:20px}
+	p4{font-weight: bold;color:#424753!important;font-size:1rem;font-family:Montserrat;margin-bottom:1rem;;line-height:1.5}
+	a {font-weight:bold;text-decoration: none!important;color:#424753!important}
+  
+#OpacNavRight {display:none}
+div.col-12.col-lg-3.order-md-2 {display:none}
+
+.uaq-bibliotecas ul {
+    display:flex;
+    columns: 2;
+    -webkit-columns: 2;
+    -moz-columns: 2;
+    list-style:disc;
+    list-style-type: none;
+    margin: 0 0 1.5em 1em;
+
+}
+.uaq-bibliotecas {
+    display:flex;
+    list-style-type: none;
+    margin-top: 30px;
+    padding-left: 0;
+    margin-left: 0;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: top;
+    justify-content: flex-start;
+    gap:30px;
+    
+}
+.uaq-biblioteca {
+    /*display:flex;*/
+    /*flex: 1 0 34%;*/
+    align-items: center;
+    border-bottom: 1px solid #EDEDED;
+    /*justify-content: center;*/
+    /*margin-right: 10px;*/
+    /*margin-left: 10px;*/
+    /*max-width:50%;*/
+    display:grid;
+    grid-template-columns:1fr 2fr;
+    justify-items:start;
+    /*max-width:50%;*/
+}
+
+img.list-thumbnail{border-radius:0 0 5px 5px}
+
+
+.uaq-biblioteca-info {
+color: #424753!important;
+    font-family: Montserrat, serif;
+    font-size: 1rem;
+    line-height: 0;
+    /*margin-top:-7px;*/
+    padding-left: 12px;
+   /* padding-right: 0px;*/
+    /*margin-right: 10px;*/
+    line-height: 1;
+    /*margin-top: -18px;*/
+    text-align: left;
+    max-width:259px;
+  
+}
+.fa-solid, .fas {
+    font-weight: 900;
+}
+.fa-classic, .fa-regular, .fa-solid, .far, .fas {
+    font-family: "Font Awesome 6 Free";
+}
+.fa, .fa-brands, .fa-classic, .fa-regular, .fa-sharp, .fa-solid, .fab, .far, .fas {
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    display: var(--fa-display,inline-block);
+    font-style: normal;
+    font-variant: normal;
+    line-height: 1;
+    text-rendering: auto;
+}
+ .full-hours-link {
+    font-size: 1.375em;
+    vertical-align: middle;
+    padding-right: 0px;
+    padding-left: 0px;
+    color:#1e6372!important
+}
+ .biblioteca-map-location {
+    font-size: 1.375em;
+    vertical-align: middle;
+    color:#f27576!important;
+}
+ .biblioteca-email {
+    font-size: 1.375em;
+    vertical-align: middle;
+    padding-left: 0px;
+    color:#1e6372!important
+}
+.phone-link {font-size: 1.375em;
+    vertical-align: middle;
+    padding-left: 0px;
+    color:#1e6372!important
+}
+
+/* Biblioteca Central */
+#open-display.open > .timerange.inactive,
+#open-display.open .days {
+     display: none;
+}
+#open-display.closed .days {
+     display: none;
+}
+#open-display.closed .timerange {
+     display: none;
+}
+#open-display.open > .openclosed::before {
+    content: 'Abierto';color:#1e6372!important;font-weight:bold;
+}
+#open-display.closed > .openclosed::before {
+    content: 'Cerrado';color:#f27576!important;font-weight:bold;
+}
+
+
+/* Centro histórico */
+#open-display-2.open > .timerange.inactive,
+#open-display-2.open .days {
+     display: none;
+}
+#open-display-2.closed .days {
+     display: none;
+}
+#open-display-2.closed .timerange {
+     display: none;
+}
+#open-display-2.open > .openclosed::before {
+    content: 'Abierto';color:#1e6372!important;font-weight:bold;
+}
+#open-display-2.closed > .openclosed::before {
+    content: 'Cerrado';color:#f27576!important;font-weight:bold;
+}
+
+/* Juriquilla */
+#open-display-3.open > .timerange.inactive,
+#open-display-3.open .days {
+     display: none;
+}
+#open-display-3.closed .days {
+     display: none;
+}
+#open-display-3.closed .timerange {
+     display: none;
+}
+#open-display-3.open > .openclosed::before {
+    content: 'Abierto';color:#1e6372!important;font-weight:bold;
+}
+#open-display-3.closed > .openclosed::before {
+    content: 'Cerrado';color:#f27576!important;font-weight:bold;
+}
+
+/* Aeropuerto */
+#open-display-4.open > .timerange.inactive,
+#open-display-4.open .days {
+     display: none;
+}
+#open-display-4.closed .days {
+     display: none;
+}
+#open-display-4.closed .timerange {
+     display: none;
+}
+#open-display-4.open > .openclosed::before {
+    content: 'Abierto';color:#1e6372!important;font-weight:bold;
+}
+#open-display-4.closed > .openclosed::before {
+    content: 'Cerrado';color:#f27576!important;font-weight:bold;
+}
+
+
+/* Amazcala */
+
+#open-display-5.open > .timerange.inactive,
+#open-display-5.open .days {
+     display: none;
+}
+#open-display-5.closed .days {
+     display: none;
+}
+#open-display-5.closed .timerange {
+     display: none;
+}
+#open-display-5.open > .openclosed::before {
+    content: 'Abierto';color:#1e6372!important;font-weight:bold;
+}
+#open-display-5.closed > .openclosed::before {
+    content: 'Cerrado';color:#f27576!important;font-weight:bold;
+}
+
+/* Amealco */
+#open-display-6.open > .timerange.inactive,
+#open-display-6.open .days {
+     display: none;
+}
+#open-display-6.closed .days {
+     display: none;
+}
+#open-display-6.closed .timerange {
+     display: none;
+}
+#open-display-6.open > .openclosed::before {
+    content: 'Abierto';color:#1e6372!important;font-weight:bold;
+}
+#open-display-6.closed > .openclosed::before {
+    content: 'Cerrado';color:#f27576!important;font-weight:bold;
+}
+
+/* Psicología */
+#open-display-7.open > .timerange.inactive,
+#open-display-7.open .days {
+     display: none;
+}
+#open-display-7.closed .days {
+     display: none;
+}
+#open-display-7.closed .timerange {
+     display: none;
+}
+#open-display-7.open > .openclosed::before {
+    content: 'Abierto';color:#1e6372;font-weight:bold;
+}
+#open-display-7.closed > .openclosed::before {
+    content: '⛔ Cerrado';color:#f27576!important;font-weight:bold;
+}
+/* MEDICINA */
+#open-display-8.open > .timerange.inactive,
+#open-display-8.open .days {
+     display: none;
+}
+#open-display-8.closed .days {
+     display: none;
+}
+#open-display-8.closed .timerange {
+     display: none;
+}
+#open-display-8.open > .openclosed::before {
+    content: 'Abierto';color:#1e6372!important;font-weight:bold;
+}
+#open-display-8.closed > .openclosed::before {
+    content: '⛔ Cerrado';color:#f27576!important;font-weight:bold;
+}
+
+/* CONTA */
+
+#open-display-9.open > .timerange.inactive,
+#open-display-9.open .days {
+     display: none;
+}
+#open-display-9.closed .days {
+     display: none;
+}
+#open-display-9.closed .timerange {
+     display: none;
+}
+#open-display-9.open > .openclosed::before {
+    content: 'Abierto';color:#1e6372!important;font-weight:bold;
+}
+#open-display-9.closed > .openclosed::before {
+    content: '⛔ Cerrado';color:#f27576!important;font-weight:bold;
+}
+
+/* Derecho */
+
+#open-display-10.open > .timerange.inactive,
+#open-display-10.open .days {
+     display: none;
+}
+#open-display-10.closed .days {
+     display: none;
+}
+#open-display-10.closed .timerange {
+     display: none;
+}
+#open-display-10.open > .openclosed::before {
+    content: 'Abierto';color:#1e6372!important;font-weight:bold;
+}
+#open-display-10.closed > .openclosed::before {
+    content: '⛔ Cerrado';color:#f27576!important;font-weight:bold;
+}
+
+/* Artes */
+#open-display-11.open > .timerange.inactive,
+#open-display-11.open .days {
+     display: none;
+}
+#open-display-11.closed .days {
+     display: none;
+}
+#open-display-11.closed .timerange {
+     display: none;
+}
+#open-display-11.open > .openclosed::before {
+    content: 'Abierto';color:#1e6372!important;font-weight:bold;
+}
+#open-display-11.closed > .openclosed::before {
+    content: '⛔ Cerrado';color:#f27576!important;font-weight:bold;
+}
+
+/* Sociales */
+#open-display-12.open > .timerange.inactive,
+#open-display-12.open .days {
+     display: none;
+}
+#open-display-12.closed .days {
+     display: none;
+}
+#open-display-12.closed .timerange {
+     display: none;
+}
+#open-display-12.open > .openclosed::before {
+    content: 'Abierto';color:#1e6372!important;font-weight:bold;
+}
+#open-display-12.closed > .openclosed::before {
+    content: '⛔ Cerrado';color:#f27576!important;font-weight:bold;
+}
+
+/* Enfermería */
+#open-display-13.open > .timerange.inactive,
+#open-display-13.open .days {
+     display: none;
+}
+#open-display-13.closed .days {
+     display: none;
+}
+#open-display-13.closed .timerange {
+     display: none;
+}
+#open-display-13.open > .openclosed::before {
+    content: 'Abierto';color:#1e6372!important;font-weight:bold;
+}
+#open-display-13.closed > .openclosed::before {
+    content: '⛔ Cerrado';color:#f27576!important;font-weight:bold;
+}
+
+/* Tequisquiapan */
+#open-display-14.open > .timerange.inactive,
+#open-display-14.open .days {
+     display: none;
+}
+#open-display-14.closed .days {
+     display: none;
+}
+#open-display-14.closed .timerange {
+     display: none;
+}
+#open-display-14.open > .openclosed::before {
+    content: 'Abierto';color:#1e6372!important;font-weight:bold;
+}
+#open-display-14.closed > .openclosed::before {
+    content: '⛔ Cerrado';color:#f27576!important;font-weight:bold;
+}
+
+/* Posgrado Contaduría */
+#open-display-15.open > .timerange.inactive,
+#open-display-15.open .days {
+     display: none;
+}
+#open-display-15.closed .days {
+     display: none;
+}
+#open-display-15.closed .timerange {
+     display: none;
+}
+#open-display-15.open > .openclosed::before {
+    content: 'Abierto';color:#1e6372!important;font-weight:bold;
+}
+#open-display-15.closed > .openclosed::before {
+    content: '⛔ Cerrado';color:#f27576!important;font-weight:bold;
+}
+
+/* San Juan */
+#open-display-16.open > .timerange.inactive,
+#open-display-16.open .days {
+     display: none;
+}
+#open-display-16.closed .days {
+     display: none;
+}
+#open-display-16.closed .timerange {
+     display: none;
+}
+#open-display-16.open > .openclosed::before {
+    content: 'Abierto';color:#1e6372!important;font-weight:bold;
+}
+#open-display-16.closed > .openclosed::before {
+    content: '⛔ Cerrado';color:#f27576!important;font-weight:bold;
+}
+
+/* Cadereyta */
+#open-display-17.open > .timerange.inactive,
+#open-display-17.open .days {
+     display: none;
+}
+#open-display-17.closed .days {
+     display: none;
+}
+#open-display-17.closed .timerange {
+     display: none;
+}
+#open-display-17.open > .openclosed::before {
+    content: 'Abierto';color:#1e6372!important;font-weight:bold;
+}
+#open-display-17.closed > .openclosed::before {
+    content: '⛔ Cerrado';color:#f27576!important;font-weight:bold;
+}
+
+/* Corregidora */
+#open-display-18.open > .timerange.inactive,
+#open-display-18.open .days {
+     display: none;
+}
+#open-display-18.closed .days {
+     display: none;
+}
+#open-display-18.closed .timerange {
+     display: none;
+}
+#open-display-18.open > .openclosed::before {
+    content: 'Abierto';color:#1e6372!important;font-weight:bold;
+}
+#open-display-18.closed > .openclosed::before {
+    content: '⛔ Cerrado';color:#f27576!important;font-weight:bold;
+}
+
+/* Jalpan */
+#open-display-19.open > .timerange.inactive,
+#open-display-19.open .days {
+     display: none;
+}
+#open-display-19.closed .days {
+     display: none;
+}
+#open-display-19.closed .timerange {
+     display: none;
+}
+#open-display-19.open > .openclosed::before {
+    content: 'Abierto';color:#1e6372!important;font-weight:bold;
+}
+#open-display-19.closed > .openclosed::before {
+    content: '⛔ Cerrado';color:#f27576!important;font-weight:bold;
+}
+
+/* Infantil */
+#open-display-20.open > .timerange.inactive,
+#open-display-20.open .days {
+     display: none;
+}
+#open-display-20.closed .days {
+     display: none;
+}
+#open-display-20.closed .timerange {
+     display: none;
+}
+#open-display-20.open > .openclosed::before {
+    content: 'Abierto';color:#1e6372!important;font-weight:bold;
+}
+#open-display-20.closed > .openclosed::before {
+    content: '⛔ Cerrado';color:#f27576!important;font-weight:bold;
+}
+
+/* Escobedo */
+#open-display-21.open > .timerange.inactive,
+#open-display-21.open .days {
+     display: none;
+}
+#open-display-21.closed .days {
+     display: none;
+}
+#open-display-21.closed .timerange {
+     display: none;
+}
+#open-display-21.open > .openclosed::before {
+    content: 'Abierto';color:#1e6372!important;font-weight:bold;
+}
+#open-display-21.closed > .openclosed::before {
+    content: '⛔ Cerrado';color:#f27576!important;font-weight:bold;
+}
+
+/* Prepa SJR */
+#open-display-22.open > .timerange.inactive,
+#open-display-22.open .days {
+     display: none;
+}
+#open-display-22.closed .days {
+     display: none;
+}
+#open-display-22.closed .timerange {
+     display: none;
+}
+#open-display-22.open > .openclosed::before {
+    content: 'Abierto';color:#1e6372!important;font-weight:bold;
+}
+#open-display-22.closed > .openclosed::before {
+    content: '⛔ Cerrado';color:#f27576!important;font-weight:bold;
+}
+
+/* Prepa Norte */
+#open-display-23.open > .timerange.inactive,
+#open-display-23.open .days {
+     display: none;
+}
+#open-display-23.closed .days {
+     display: none;
+}
+#open-display-23.closed .timerange {
+     display: none;
+}
+#open-display-23.open > .openclosed::before {
+    content: 'Abierto';color:#1e6372!important;font-weight:bold;
+}
+#open-display-23.closed > .openclosed::before {
+    content: '⛔ Cerrado';color:#f27576!important;font-weight:bold;
+}
+
+/* Prepa Sur */
+#open-display-24.open > .timerange.inactive,
+#open-display-24.open .days {
+     display: none;
+}
+#open-display-24.closed .days {
+     display: none;
+}
+#open-display-24.closed .timerange {
+     display: none;
+}
+#open-display-24.open > .openclosed::before {
+    content: 'Abierto';color:#1e6372!important;font-weight:bold;
+}
+#open-display-24.closed > .openclosed::before {
+    content: '⛔ Cerrado';color:#f27576!important;font-weight:bold;
+}
+
+/* Prepa Bicentenario */
+#open-display-25.open > .timerange.inactive,
+#open-display-25.open .days {
+     display: none;
+}
+#open-display-25.closed .days {
+     display: none;
+}
+#open-display-25.closed .timerange {
+     display: none;
+}
+#open-display-25.open > .openclosed::before {
+    content: 'Abierto';color:#1e6372!important;font-weight:bold;
+}
+#open-display-25.closed > .openclosed::before {
+    content: '⛔ Cerrado';color:#f27576!important;font-weight:bold;
+}
+
+/* Maintenance Notice */
+
+.offline-notice,
+.offline-msg {
+    display: none;
+   }
+ 
+   .mask1 {
+  -webkit-mask-image: url('https://bibliotecasuaq.github.io/dgbsdi-site/micrositio/bibliotecas/libro.png');
+  mask-image: url('https://bibliotecasuaq.github.io/dgbsdi-site/micrositio/bibliotecas/libro.png');
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;    
+  -webkit-mask-size: 100%;
+}
+
+/* End Maintenance Notice */
+</style>
+</head>
+<body>
+    
+    
+    <div class="container">
+	 
+        
+        
+   
+        <ul class="uaq-bibliotecas">
+
+            <li class="uaq-biblioteca">
+                <div class="mask1">
+                <div class="uaq-biblioteca-thumbnail">
+                    <img class="list-thumbnail" src="https://bibliotecasuaq.github.io/dgbsdi-site/micrositio/bibliotecas/central.JPG" style="width:143px;height:143px;object-fit:cover"alt="">
+                </div></div>
+                <div class="uaq-biblioteca-info">
+                    
+                    <p><a href="">Biblioteca Central</a><br>
+                    
+                        <span class="list-phone"><a class="phone-link" href="" aria-label="Teléfonos" title="Teléfonos">
+                            <i class="fa-solid fa-phone" aria-hidden="true"><span class="sr-only">Biblioteca Central</span></i></a> (442) 129200 Ext.3518</span><br>
+                        <span class="list-hours"><a class="full-hours-link" href="" aria-label="Horarios" title="Horarios">
+                            <i class="fa-solid fa-clock" aria-hidden="true"><span class="sr-only">Biblioteca Central</span></i></a> L-V 8-21:30, S 8-15, D 8-14</span><br>
+                        <span class="list-email"><a class="biblioteca-email" href="mailto:central.bib@uaq.edu.mx" title="Correo"><i class="fa-solid fa-envelope" aria-hidden="true">
+                            <span class="sr-only"></i></a> central.bib@uaq.edu.mx</span><br>
+                        <span id="open-display">
+                        <span class="offline-notice" style="color:#f27576!important;font-weight:bold">Cerrado</span>
+                        <span class="openclosed"></span>
+                        <span class="timerange" data-days="1,2,3,4,5," data-open="08:00" data-close="21:30">
+                        <span class="days">Mon - Fri</span>hasta las 9:30pm</span>
+                        <span class="timerange" data-days="6" data-open="08:00" data-close="15:30">
+                        <span class="days">Tue</span>hasta las 15:30</span>
+                        <span class="timerange" data-days="0" data-open="08:00" data-close="14:00">
+                            <span class="days"></span></span>
+                       
+                        <a class="biblioteca-map-location" href="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3734.9100561632704!2d-100.41290253609411!3d20.591730407931838!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d35acc6fbfd63f%3A0x16ade6f9e59dd0f2!2sBiblioteca%20Central%20UAQ!5e0!3m2!1ses-419!2smx!4v1680581952109!5m2!1ses-419!2smx" target="popup" onclick="window.open('https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3734.9100561632704!2d-100.41290253609411!3d20.591730407931838!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d35acc6fbfd63f%3A0x16ade6f9e59dd0f2!2sBiblioteca%20Central%20UAQ!5e0!3m2!1ses-419!2smx!4v1680581952109!5m2!1ses-419!2smx','popup','width=300,height=300'); return false;" title="Mapa">
+                        <i class="fa fa-location-dot" aria-hidden="true">
+                        <span class="sr-only">Mapa</span></i></a>
+                        </p>
+                        
+                </div>
+            </li>
+            
+            <li class="uaq-biblioteca">
+                <div class="mask1">
+                <div class="uaq-biblioteca-thumbnail">
+                    <img class="list-thumbnail" src="https://bibliotecasuaq.github.io/dgbsdi-site/micrositio/bibliotecas/centrohistorico.JPG" style="width:143px;height:143px;object-fit:cover"alt="">
+                </div></div>
+                <div class="uaq-biblioteca-info"style=>
+                    
+                    <p><a href="">Biblioteca Campus Centro Histórico</a><br>
+                    
+                        <span class="list-phone"><a class="phone-link" href="" aria-label="Teléfonos" title="Teléfonos">
+                            <i class="fa-solid fa-phone" aria-hidden="true"><span class="sr-only">Biblioteca Central</span></i></a> (442) 129200 Ext.3516</span><br>
+                        <span class="list-hours"><a class="full-hours-link" href="" aria-label="Horarios" title="Horarios">
+                            <i class="fa-solid fa-clock" aria-hidden="true"><span class="sr-only">Biblioteca Central</span></i></a> L-V 8-21:30, S 8-15, D 8-14</span><br>
+                        <span class="list-email"><a class="biblioteca-email" href="mailto:central.bib@uaq.edu.mx" title="Correo"><i class="fa-solid fa-envelope" aria-hidden="true">
+                            <span class="sr-only"></i></a> filosofia.bib@uaq.edu.mx</span><br>
+                        <span id="open-display-2">
+                        <span class="offline-notice"style="color:#f27576!important;font-weight:bold">Cerrado</span>
+                        <span class="openclosed"></span>
+                        <span class="timerange" data-days="1,2,3,4,5," data-open="08:00" data-close="20:30">
+                        <span class="days">Mon - Fri</span>hasta las 8:30pm</span>
+                        <span class="timerange" data-days="" data-open="08:00" data-close="15:30">
+                        <span class="days"></span></span>
+                        <span class="timerange" data-days="" data-open="08:00" data-close="14:00">
+                            <span class="days"></span></span>
+                        
+                        <a class="biblioteca-map-location" href="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3734.9100561632704!2d-100.41290253609411!3d20.591730407931838!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d35acc6fbfd63f%3A0x16ade6f9e59dd0f2!2sBiblioteca%20Central%20UAQ!5e0!3m2!1ses-419!2smx!4v1680581952109!5m2!1ses-419!2smx" target="popup" onclick="window.open('https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3734.9100561632704!2d-100.41290253609411!3d20.591730407931838!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d35acc6fbfd63f%3A0x16ade6f9e59dd0f2!2sBiblioteca%20Central%20UAQ!5e0!3m2!1ses-419!2smx!4v1680581952109!5m2!1ses-419!2smx','popup','width=300,height=300'); return false;" title="Mapa">
+                        <i class="fa-solid fa-location-dot" aria-hidden="true">
+                        <span class="sr-only">Mapa</span></i></a>
+                        </p>
+                        
+                </div>
+            </li>
+
+            <li class="uaq-biblioteca">
+                <div class="mask1">
+                <div class="uaq-biblioteca-thumbnail">
+                    <img class="list-thumbnail" src="https://bibliotecasuaq.github.io/dgbsdi-site/micrositio/bibliotecas/juriquilla.JPEG" style="width:143px;height:143px;object-fit:cover"alt="">
+                </div></div>
+                <div class="uaq-biblioteca-info"style=>
+                    
+                    <p><a href="">Biblioteca Campus Juriquilla</a><br>
+                    
+                        <span class="list-phone"><a class="phone-link" href="" aria-label="Teléfonos" title="Teléfonos">
+                            <i class="fa-solid fa-phone" aria-hidden="true"><span class="sr-only">Biblioteca Juriquilla</span></i></a> (442) 129200 Ext.5919</span><br>
+                        <span class="list-hours"><a class="full-hours-link" href="" aria-label="Horarios" title="Horarios">
+                            <i class="fa-solid fa-clock" aria-hidden="true"><span class="sr-only">Biblioteca Central</span></i></a> L-V 8-19:00</span><br>
+                        <span class="list-email"><a class="biblioteca-email" href="mailto:central.bib@uaq.edu.mx" title="Correo"><i class="fa-solid fa-envelope" aria-hidden="true">
+                            <span class="sr-only"></i></a> naturales.bib@uaq.edu.mx</span><br>
+                        <span id="open-display-3">
+                        <span class="offline-notice"style="color:#f27576!important;font-weight:bold">Cerrado</span>
+                        <span class="openclosed"></span>
+                        <span class="timerange" data-days="1,2,3,4,5," data-open="08:00" data-close="19:00">
+                        <span class="days">Mon - Fri</span>hasta las 7pm</span>
+                        <span class="timerange" data-days="" data-open="08:00" data-close="15:30">
+                        <span class="days"></span></span>
+                        <span class="timerange" data-days="" data-open="08:00" data-close="14:00">
+                            <span class="days"></span></span>
+                       
+                        <a class="biblioteca-map-location" href="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d691.280314803511!2d-100.4426616249065!3d20.702720768674332!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1suaq%20juriquilla!5e1!3m2!1ses-419!2smx!4v1680638937948!5m2!1ses-419!2smx" target="popup" onclick="window.open('https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d691.280314803511!2d-100.4426616249065!3d20.702720768674332!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1suaq%20juriquilla!5e1!3m2!1ses-419!2smx!4v1680638937948!5m2!1ses-419!2smx','popup','width=300,height=300'); return false;" title="Mapa">
+                        <i class="fa-solid fa-location-dot" aria-hidden="true">
+                        <span class="sr-only">Mapa</span></i></a>
+                        </p>
+                        
+                </div>
+            </li>
+
+            <li class="uaq-biblioteca">
+                <div class="mask1">
+                <div class="uaq-biblioteca-thumbnail">
+                    <img class="list-thumbnail" src="https://bibliotecasuaq.github.io/dgbsdi-site/micrositio/bibliotecas/aeropuerto.jpg" style="width:143px;height:143px;object-fit:cover"alt="">
+                </div></div>
+                <div class="uaq-biblioteca-info"style=>
+                    
+                    <p><a href="">Biblioteca Campus Aeropuerto</a><br>
+                    
+                        <span class="list-phone"><a class="phone-link" href="" aria-label="Teléfonos" title="Teléfonos">
+                            <i class="fa-solid fa-phone" aria-hidden="true"><span class="sr-only">Biblioteca Juriquilla</span></i></a> (442) 129200 Ext.65417</span><br>
+                        <span class="list-hours"><a class="full-hours-link" href="" aria-label="Horarios" title="Horarios">
+                            <i class="fa-solid fa-clock" aria-hidden="true"><span class="sr-only">Biblioteca Central</span></i></a> L-V 8-21:00</span><br>
+                        <span class="list-email"><a class="biblioteca-email" href="mailto:central.bib@uaq.edu.mx" title="Correo"><i class="fa-solid fa-envelope" aria-hidden="true">
+                            <span class="sr-only"></i></a> aeropuerto.bib@uaq.edu.mx</span><br>
+                        <span id="open-display-4">
+                        <span class="offline-notice"style="color:#f27576!important;font-weight:bold">Cerrado</span>
+                        <span class="openclosed"></span>
+                        <span class="timerange" data-days="1,2,3,4,5," data-open="08:00" data-close="21:00">
+                        <span class="days">Mon - Fri</span>hasta las 9pm</span>
+                        <span class="timerange" data-days="" data-open="08:00" data-close="15:30">
+                        <span class="days"></span></span>
+                        <span class="timerange" data-days="" data-open="08:00" data-close="14:00">
+                            <span class="days"></span></span>
+                       
+                        <a class="biblioteca-map-location" href="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3734.9100561632704!2d-100.41290253609411!3d20.591730407931838!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d35acc6fbfd63f%3A0x16ade6f9e59dd0f2!2sBiblioteca%20Central%20UAQ!5e0!3m2!1ses-419!2smx!4v1680581952109!5m2!1ses-419!2smx" target="popup" onclick="window.open('https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3734.9100561632704!2d-100.41290253609411!3d20.591730407931838!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d35acc6fbfd63f%3A0x16ade6f9e59dd0f2!2sBiblioteca%20Central%20UAQ!5e0!3m2!1ses-419!2smx!4v1680581952109!5m2!1ses-419!2smx','popup','width=300,height=300'); return false;" title="Mapa">
+                        <i class="fa-solid fa-location-dot" aria-hidden="true">
+                        <span class="sr-only">Mapa</span></i></a>
+                        </p>
+                        
+                </div>
+            </li>
+
+            <li class="uaq-biblioteca">
+                <div class="mask1">
+                <div class="uaq-biblioteca-thumbnail">
+                    <img class="list-thumbnail" src="https://bibliotecasuaq.github.io/dgbsdi-site/micrositio/bibliotecas/amazcala.jpeg" style="width:143px;height:143px;object-fit:cover"alt="">
+                </div></div>
+                <div class="uaq-biblioteca-info"style=>
+                    
+                    <p><a href="">Biblioteca Campus Amazcala</a><br>
+                    
+                        <span class="list-phone"><a class="phone-link" href="" aria-label="Teléfonos" title="Teléfonos">
+                            <i class="fa-solid fa-phone" aria-hidden="true"><span class="sr-only">Biblioteca Amazcala</span></i></a> (442) 129200 Ext.7055</span><br>
+                        <span class="list-hours"><a class="full-hours-link" href="" aria-label="Horarios" title="Horarios">
+                            <i class="fa-solid fa-clock" aria-hidden="true"><span class="sr-only">Biblioteca Central</span></i></a> L-V 8-16:00</span><br>
+                        <span class="list-email"><a class="biblioteca-email" href="mailto:central.bib@uaq.edu.mx" title="Correo"><i class="fa-solid fa-envelope" aria-hidden="true">
+                            <span class="sr-only"></i></a> amazcala.bib@uaq.edu.mx</span><br>
+                        <span id="open-display-5">
+                        <span class="offline-notice"style="color:#f27576!important;font-weight:bold">Cerrado</span>
+                        <span class="openclosed"></span>
+                        <span class="timerange" data-days="1,2,3,4,5," data-open="08:00" data-close="16:00">
+                        <span class="days">Mon - Fri</span>hasta las 4pm</span>
+                        <span class="timerange" data-days="" data-open="08:00" data-close="13:30">
+                        <span class="days"></span></span>
+                        <span class="timerange" data-days="" data-open="08:00" data-close="14:00">
+                            <span class="days"></span></span>
+                        
+                        <a class="biblioteca-map-location" href="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3734.9100561632704!2d-100.41290253609411!3d20.591730407931838!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d35acc6fbfd63f%3A0x16ade6f9e59dd0f2!2sBiblioteca%20Central%20UAQ!5e0!3m2!1ses-419!2smx!4v1680581952109!5m2!1ses-419!2smx" target="popup" onclick="window.open('https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3734.9100561632704!2d-100.41290253609411!3d20.591730407931838!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d35acc6fbfd63f%3A0x16ade6f9e59dd0f2!2sBiblioteca%20Central%20UAQ!5e0!3m2!1ses-419!2smx!4v1680581952109!5m2!1ses-419!2smx','popup','width=300,height=300'); return false;" title="Mapa">
+                        <i class="fa-solid fa-location-dot" aria-hidden="true">
+                        <span class="sr-only">Mapa</span></i></a>
+                        </p>
+                        
+                </div>
+            </li>
+
+            <li class="uaq-biblioteca">
+                <div class="mask1">
+                <div class="uaq-biblioteca-thumbnail">
+                    <img class="list-thumbnail" src="https://bibliotecasuaq.github.io/dgbsdi-site/micrositio/bibliotecas/amealco.jpeg" style="width:143px;height:143px;object-fit:cover"alt="">
+                </div></div>
+                <div class="uaq-biblioteca-info"style=>
+                    
+                    <p><a href="">Biblioteca Campus Amealco</a><br>
+                    
+                        <span class="list-phone"><a class="phone-link" href="" aria-label="Teléfonos" title="Teléfonos">
+                            <i class="fa-solid fa-phone" aria-hidden="true"><span class="sr-only">Biblioteca Amealco</span></i></a> (442) 129200 Ext.6486</span><br>
+                        <span class="list-hours"><a class="full-hours-link" href="" aria-label="Horarios" title="Horarios">
+                            <i class="fa-solid fa-clock" aria-hidden="true"><span class="sr-only">Biblioteca Central</span></i></a> L-V 8-16:00</span><br>
+                        <span class="list-email"><a class="biblioteca-email" href="mailto:central.bib@uaq.edu.mx" title="Correo"><i class="fa-solid fa-envelope" aria-hidden="true">
+                            <span class="sr-only"></i></a> amealco.bib@uaq.edu.mx</span><br>
+                        <span id="open-display-6">
+                        <span class="offline-notice"style="color:#f27576!important;font-weight:bold">Cerrado</span>
+                        <span class="openclosed"></span>
+                        <span class="timerange" data-days="1,2,3,4,5," data-open="08:00" data-close="16:00">
+                        <span class="days">Mon - Fri</span>hasta las 4pm</span>
+                        <span class="timerange" data-days="" data-open="08:00" data-close="13:30">
+                        <span class="days"></span></span>
+                        <span class="timerange" data-days="" data-open="08:00" data-close="14:00">
+                            <span class="days"></span></span>
+                        
+                        <a class="biblioteca-map-location" href="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3734.9100561632704!2d-100.41290253609411!3d20.591730407931838!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d35acc6fbfd63f%3A0x16ade6f9e59dd0f2!2sBiblioteca%20Central%20UAQ!5e0!3m2!1ses-419!2smx!4v1680581952109!5m2!1ses-419!2smx" target="popup" onclick="window.open('https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3734.9100561632704!2d-100.41290253609411!3d20.591730407931838!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d35acc6fbfd63f%3A0x16ade6f9e59dd0f2!2sBiblioteca%20Central%20UAQ!5e0!3m2!1ses-419!2smx!4v1680581952109!5m2!1ses-419!2smx','popup','width=300,height=300'); return false;" title="Mapa">
+                        <i class="fa-solid fa-location-dot" aria-hidden="true">
+                        <span class="sr-only">Mapa</span></i></a>
+                        </p>
+                        
+                </div>
+            </li>
+
+            <li class="uaq-biblioteca">
+                <div class="mask1">
+                <div class="uaq-biblioteca-thumbnail">
+                    <img class="list-thumbnail" src="https://bibliotecasuaq.github.io/dgbsdi-site/micrositio/bibliotecas/psicología2.jpg" style="width:143px;height:143px;object-fit:cover"alt="">
+                </div></div>
+                <div class="uaq-biblioteca-info"style=>
+                    
+                    <p><a href="">Biblioteca de Psicología y Educación</a><br>
+                    
+                        <span class="list-phone"><a class="phone-link" href="" aria-label="Teléfonos" title="Teléfonos">
+                            <i class="fa-solid fa-phone" aria-hidden="true"><span class="sr-only">Biblioteca de Psicología y Educación</span></i></a> (442) 129200 Ext.6307</span><br>
+                        <span class="list-hours"><a class="full-hours-link" href="" aria-label="Horarios" title="Horarios">
+                            <i class="fa-solid fa-clock" aria-hidden="true"><span class="sr-only">Biblioteca de Psicología y Educación</span></i></a> L-V 8-16:00</span><br>
+                        <span class="list-email"><a class="biblioteca-email" href="mailto:central.bib@uaq.edu.mx" title="Correo"><i class="fa-solid fa-envelope" aria-hidden="true">
+                            <span class="sr-only"></i></a> psicologia.bib@uaq.edu.mx</span><br>
+                        <span id="open-display-7">
+                        <span class="offline-notice"style="color:#f27576!important;font-weight:bold">Cerrado</span>
+                        <span class="openclosed"></span>
+                        <span class="timerange" data-days="1,2,3,4,5," data-open="07:00" data-close="21:30">
+                        <span class="days">Mon - Fri</span>hasta las 7pm</span>
+                        <span class="timerange" data-days="6" data-open="10:30" data-close="14:00">
+                        <span class="days">Sat</span>hasta las 2pm</span>
+                        <span class="timerange" data-days="" data-open="08:00" data-close="14:00">
+                            <span class="days"></span></span>
+                       
+                        <a class="biblioteca-map-location" href="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3734.9100561632704!2d-100.41290253609411!3d20.591730407931838!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d35acc6fbfd63f%3A0x16ade6f9e59dd0f2!2sBiblioteca%20Central%20UAQ!5e0!3m2!1ses-419!2smx!4v1680581952109!5m2!1ses-419!2smx" target="popup" onclick="window.open('https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3734.9100561632704!2d-100.41290253609411!3d20.591730407931838!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d35acc6fbfd63f%3A0x16ade6f9e59dd0f2!2sBiblioteca%20Central%20UAQ!5e0!3m2!1ses-419!2smx!4v1680581952109!5m2!1ses-419!2smx','popup','width=300,height=300'); return false;" title="Mapa">
+                        <i class="fa-solid fa-location-dot" aria-hidden="true">
+                        <span class="sr-only">Mapa</span></i></a>
+                        </p>
+                        
+                </div>
+            </li>
+          
+            <li class="uaq-biblioteca">
+                <div class="mask1">
+                <div class="uaq-biblioteca-thumbnail">
+                    <img class="list-thumbnail" src="https://bibliotecasuaq.github.io/dgbsdi-site/micrositio/bibliotecas/medicina.jpg" style="width:143px;height:143px;object-fit:cover"alt="">
+                </div></div>
+                <div class="uaq-biblioteca-info"style=>
+                    
+                    <p><a href="">Biblioteca de Medicina (CRIDS)</a><br>
+                    
+                        <span class="list-phone"><a class="phone-link" href="" aria-label="Teléfonos" title="Teléfonos">
+                            <i class="fa-solid fa-phone" aria-hidden="true"><span class="sr-only">Biblioteca de Medicina (CRIDS)</span></i></a> (442) 129200 Ext.6222 y 6204</span><br>
+                        <span class="list-hours"><a class="full-hours-link" href="" aria-label="Horarios" title="Horarios">
+                            <i class="fa-solid fa-clock" aria-hidden="true"><span class="sr-only">Biblioteca de Medicina (CRIDS)</span></i></a> L-V 7-22:00 hrs</span><br>
+                        <span class="list-email"><a class="biblioteca-email" href="mailto:central.bib@uaq.edu.mx" title="Correo"><i class="fa-solid fa-envelope" aria-hidden="true">
+                            <span class="sr-only"></i></a> medicina.bib@uaq.edu.mx</span><br>
+                        <span id="open-display-8">
+                        <span class="offline-notice"style="color:#f27576!important;font-weight:bold">Cerrado</span>
+                        <span class="openclosed"></span>
+                        <span class="timerange" data-days="1,2,3,4,5," data-open="07:00" data-close="22:00">
+                        <span class="days">Mon - Fri</span>hasta las 10pm</span>
+                        <span class="timerange" data-days="" data-open="10:30" data-close="14:00">
+                        <span class="days"></span></span>
+                        <span class="timerange" data-days="" data-open="08:00" data-close="14:00">
+                            <span class="days"></span></span>
+                       
+                        <a class="biblioteca-map-location" href="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3734.9100561632704!2d-100.41290253609411!3d20.591730407931838!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d35acc6fbfd63f%3A0x16ade6f9e59dd0f2!2sBiblioteca%20Central%20UAQ!5e0!3m2!1ses-419!2smx!4v1680581952109!5m2!1ses-419!2smx" target="popup" onclick="window.open('https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3734.9100561632704!2d-100.41290253609411!3d20.591730407931838!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d35acc6fbfd63f%3A0x16ade6f9e59dd0f2!2sBiblioteca%20Central%20UAQ!5e0!3m2!1ses-419!2smx!4v1680581952109!5m2!1ses-419!2smx','popup','width=300,height=300'); return false;" title="Mapa">
+                        <i class="fa-solid fa-location-dot" aria-hidden="true">
+                        <span class="sr-only">Mapa</span></i></a>
+                        </p>
+                        
+                </div>
+            </li>
+
+            <li class="uaq-biblioteca">
+                <div class="mask1">
+                <div class="uaq-biblioteca-thumbnail">
+                    <img class="list-thumbnail" src="https://bibliotecasuaq.github.io/dgbsdi-site/micrositio/bibliotecas/contaduria.jpg" style="width:143px;height:143px;object-fit:cover"alt="">
+                </div></div>
+                <div class="uaq-biblioteca-info"style=>
+                    
+                    <p><a href="">Biblioteca de Cont. y Admón.</a><br>
+                    
+                        <span class="list-phone"><a class="phone-link" href="" aria-label="Teléfonos" title="Teléfonos">
+                            <i class="fa-solid fa-phone" aria-hidden="true"><span class="sr-only">Biblioteca de Cont. y Admón.</span></i></a> (442) 129200 Ext.5227, 5277 y 5253</span><br>
+                        <span class="list-hours"><a class="full-hours-link" href="" aria-label="Horarios" title="Horarios">
+                            <i class="fa-solid fa-clock" aria-hidden="true"><span class="sr-only">Biblioteca de Cont. y Admón</span></i></a> L-V 7-22:00, S 9-13:00 hrs</span><br>
+                        <span class="list-email"><a class="biblioteca-email" href="mailto:central.bib@uaq.edu.mx" title="Correo"><i class="fa-solid fa-envelope" aria-hidden="true">
+                            <span class="sr-only"></i></a> contaduria.bib@uaq.edu.mx</span><br>
+                        <span id="open-display-9">
+                        <span class="offline-notice"style="color:#f27576!important;font-weight:bold">Cerrado</span>
+                        <span class="openclosed"></span>
+                        <span class="timerange" data-days="1,2,3,4,5," data-open="07:00" data-close="22:30">
+                        <span class="days">Mon - Fri</span>hasta las 10:30pm</span>
+                        <span class="timerange" data-days="6" data-open="09:00" data-close="14:00">
+                        <span class="days">Sat</span>hasta la 1pm</span>
+                        <span class="timerange" data-days="" data-open="08:00" data-close="14:00">
+                            <span class="days"></span></span>
+                       
+                        <a class="biblioteca-map-location" href="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3734.9100561632704!2d-100.41290253609411!3d20.591730407931838!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d35acc6fbfd63f%3A0x16ade6f9e59dd0f2!2sBiblioteca%20Central%20UAQ!5e0!3m2!1ses-419!2smx!4v1680581952109!5m2!1ses-419!2smx" target="popup" onclick="window.open('https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3734.9100561632704!2d-100.41290253609411!3d20.591730407931838!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d35acc6fbfd63f%3A0x16ade6f9e59dd0f2!2sBiblioteca%20Central%20UAQ!5e0!3m2!1ses-419!2smx!4v1680581952109!5m2!1ses-419!2smx','popup','width=300,height=300'); return false;" title="Mapa">
+                        <i class="fa-solid fa-location-dot" aria-hidden="true">
+                        <span class="sr-only">Mapa</span></i></a>
+                        </p>
+                        
+                </div>
+            </li>
+
+            <li class="uaq-biblioteca">
+                <div class="mask1">
+                <div class="uaq-biblioteca-thumbnail">
+                    <img class="list-thumbnail" src="https://bibliotecasuaq.github.io/dgbsdi-site/micrositio/bibliotecas/derecho.jpg" style="width:143px;height:143px;object-fit:cover"alt="">
+                </div></div>
+                <div class="uaq-biblioteca-info"style=>
+                    
+                    <p><a href="">Biblioteca Derecho</a><br>
+                    
+                        <span class="list-phone"><a class="phone-link" href="" aria-label="Teléfonos" title="Teléfonos">
+                            <i class="fa-solid fa-phone" aria-hidden="true"><span class="sr-only">Biblioteca Derecho</span></i></a> (442) 129200 Ext.5632, 5631</span><br>
+                        <span class="list-hours"><a class="full-hours-link" href="" aria-label="Horarios" title="Horarios">
+                            <i class="fa-solid fa-clock" aria-hidden="true"><span class="sr-only">Biblioteca Derecho</span></i></a> L-V 7-22:00, S 8-14:00 hrs</span><br>
+                        <span class="list-email"><a class="biblioteca-email" href="mailto:central.bib@uaq.edu.mx" title="Correo"><i class="fa-solid fa-envelope" aria-hidden="true">
+                            <span class="sr-only"></i></a> contaduria.bib@uaq.edu.mx</span><br>
+                        <span id="open-display-10">
+                        <span class="offline-notice"style="color:#f27576!important;font-weight:bold">Cerrado</span>
+                        <span class="openclosed"></span>
+                        <span class="timerange" data-days="1,2,3,4,5," data-open="07:00" data-close="22:30">
+                        <span class="days">Mon - Fri</span>hasta las 10:00pm</span>
+                        <span class="timerange" data-days="6" data-open="07:00" data-close="14:00">
+                        <span class="days">Sat</span>hasta las 2pm</span>
+                        <span class="timerange" data-days="" data-open="08:00" data-close="14:00">
+                            <span class="days"></span></span>
+                       
+                        <a class="biblioteca-map-location" href="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3734.9100561632704!2d-100.41290253609411!3d20.591730407931838!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d35acc6fbfd63f%3A0x16ade6f9e59dd0f2!2sBiblioteca%20Central%20UAQ!5e0!3m2!1ses-419!2smx!4v1680581952109!5m2!1ses-419!2smx" target="popup" onclick="window.open('https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3734.9100561632704!2d-100.41290253609411!3d20.591730407931838!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d35acc6fbfd63f%3A0x16ade6f9e59dd0f2!2sBiblioteca%20Central%20UAQ!5e0!3m2!1ses-419!2smx!4v1680581952109!5m2!1ses-419!2smx','popup','width=300,height=300'); return false;" title="Mapa">
+                        <i class="fa-solid fa-location-dot" aria-hidden="true">
+                        <span class="sr-only">Mapa</span></i></a>
+                        </p>
+                        
+                </div>
+            </li>
+
+            <li class="uaq-biblioteca">
+                <div class="mask1">
+                <div class="uaq-biblioteca-thumbnail">
+                    <img class="list-thumbnail" src="https://bibliotecasuaq.github.io/dgbsdi-site/micrositio/bibliotecas/artes.jpg" style="width:143px;height:143px;object-fit:cover"alt="">
+                </div></div>
+                <div class="uaq-biblioteca-info"style=>
+                    
+                    <p><a href="">Biblioteca de Artes</a><br>
+                    
+                        <span class="list-phone"><a class="phone-link" href="" aria-label="Teléfonos" title="Teléfonos">
+                            <i class="fa-solid fa-phone" aria-hidden="true"><span class="sr-only">Biblioteca Derecho</span></i></a> (442) 129200 Ext.5632, 5631</span><br>
+                        <span class="list-hours"><a class="full-hours-link" href="" aria-label="Horarios" title="Horarios">
+                            <i class="fa-solid fa-clock" aria-hidden="true"><span class="sr-only">Biblioteca Derecho</span></i></a> L-V 8-21:30, S 8-16:00 hrs</span><br>
+                        <span class="list-email"><a class="biblioteca-email" href="mailto:central.bib@uaq.edu.mx" title="Correo"><i class="fa-solid fa-envelope" aria-hidden="true">
+                            <span class="sr-only"></i></a> bellasartes.bib@uaq.edu.mx</span><br>
+                        <span id="open-display-11">
+                        <span class="offline-notice"style="color:#f27576!important;font-weight:bold">Cerrado</span>
+                        <span class="openclosed"></span>
+                        <span class="timerange" data-days="1,2,3,4,5," data-open="08:00" data-close="21:30">
+                        <span class="days">Mon - Fri</span>hasta las 21:30pm</span>
+                        <span class="timerange" data-days="6" data-open="08:00" data-close="16:00">
+                        <span class="days">Sat</span>hasta las 2pm</span>
+                        <span class="timerange" data-days="" data-open="08:00" data-close="14:00">
+                            <span class="days"></span></span>
+                       
+                        <a class="biblioteca-map-location" href="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3734.9100561632704!2d-100.41290253609411!3d20.591730407931838!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d35acc6fbfd63f%3A0x16ade6f9e59dd0f2!2sBiblioteca%20Central%20UAQ!5e0!3m2!1ses-419!2smx!4v1680581952109!5m2!1ses-419!2smx" target="popup" onclick="window.open('https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3734.9100561632704!2d-100.41290253609411!3d20.591730407931838!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d35acc6fbfd63f%3A0x16ade6f9e59dd0f2!2sBiblioteca%20Central%20UAQ!5e0!3m2!1ses-419!2smx!4v1680581952109!5m2!1ses-419!2smx','popup','width=300,height=300'); return false;" title="Mapa">
+                        <i class="fa-solid fa-location-dot" aria-hidden="true">
+                        <span class="sr-only">Mapa</span></i></a>
+                        </p>
+                        
+                </div>
+            </li>
+
+            <li class="uaq-biblioteca">
+                <div class="mask1">
+                <div class="uaq-biblioteca-thumbnail">
+                    <img class="list-thumbnail" src="https://bibliotecasuaq.github.io/dgbsdi-site/micrositio/bibliotecas/sociales.jpg" style="width:143px;height:143px;object-fit:cover"alt="">
+                </div></div>
+                <div class="uaq-biblioteca-info"style=>
+                    
+                    <p><a href="">Biblioteca de Ciencias Políticas</a><br>
+                    
+                        <span class="list-phone"><a class="phone-link" href="" aria-label="Teléfonos" title="Teléfonos">
+                            <i class="fa-solid fa-phone" aria-hidden="true"><span class="sr-only">Biblioteca Derecho</span></i></a> (442) 129200 Ext.5456</span><br>
+                        <span class="list-hours"><a class="full-hours-link" href="" aria-label="Horarios" title="Horarios">
+                            <i class="fa-solid fa-clock" aria-hidden="true"><span class="sr-only">Biblioteca de Ciencias Políticas</span></i></a> L-V 8-20:00 hrs</span><br>
+                        <span class="list-email"><a class="biblioteca-email" href="mailto:central.bib@uaq.edu.mx" title="Correo"><i class="fa-solid fa-envelope" aria-hidden="true">
+                            <span class="sr-only"></i></a> sociales.bib@uaq.edu.mx</span><br>
+                        <span id="open-display-12">
+                        <span class="offline-notice"style="color:#f27576!important;font-weight:bold">Cerrado</span>
+                        <span class="openclosed"></span>
+                        <span class="timerange" data-days="1,2,3,4,5," data-open="08:00" data-close="20:00">
+                        <span class="days">Mon - Fri</span>hasta las 20:00pm</span>
+                        <span class="timerange" data-days="" data-open="08:00" data-close="16:00">
+                        <span class="days">Sat</span>hasta las 2pm</span>
+                        <span class="timerange" data-days="" data-open="08:00" data-close="14:00">
+                            <span class="days"></span></span>
+                       
+                        <a class="biblioteca-map-location" href="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3734.9100561632704!2d-100.41290253609411!3d20.591730407931838!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d35acc6fbfd63f%3A0x16ade6f9e59dd0f2!2sBiblioteca%20Central%20UAQ!5e0!3m2!1ses-419!2smx!4v1680581952109!5m2!1ses-419!2smx" target="popup" onclick="window.open('https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3734.9100561632704!2d-100.41290253609411!3d20.591730407931838!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d35acc6fbfd63f%3A0x16ade6f9e59dd0f2!2sBiblioteca%20Central%20UAQ!5e0!3m2!1ses-419!2smx!4v1680581952109!5m2!1ses-419!2smx','popup','width=300,height=300'); return false;" title="Mapa">
+                        <i class="fa-solid fa-location-dot" aria-hidden="true">
+                        <span class="sr-only">Mapa</span></i></a>
+                        </p>
+                        
+                </div>
+            </li>
+
+            <li class="uaq-biblioteca">
+                <div class="mask1">
+                <div class="uaq-biblioteca-thumbnail">
+                    <img class="list-thumbnail" src="https://bibliotecasuaq.github.io/dgbsdi-site/micrositio/bibliotecas/enfermeria.jpg" style="width:143px;height:143px;object-fit:cover;object-position: 10px -20px"alt="">
+                </div></div>
+                <div class="uaq-biblioteca-info"style=>
+                    
+                    <p><a href="">Biblioteca Enfermería</a><br>
+                    
+                        <span class="list-phone"><a class="phone-link" href="" aria-label="Teléfonos" title="Teléfonos">
+                            <i class="fa-solid fa-phone" aria-hidden="true"><span class="sr-only">Biblioteca de Enfermería</span></i></a> (442) 129200 Ext.5711</span><br>
+                        <span class="list-hours"><a class="full-hours-link" href="" aria-label="Horarios" title="Horarios">
+                            <i class="fa-solid fa-clock" aria-hidden="true"><span class="sr-only">Biblioteca Enfermería</span></i></a> L-V 7-21:30 hrs</span><br>
+                        <span class="list-email"><a class="biblioteca-email" href="mailto:central.bib@uaq.edu.mx" title="Correo"><i class="fa-solid fa-envelope" aria-hidden="true">
+                            <span class="sr-only"></i></a> enfermeria.bib@uaq.edu.mx</span><br>
+                        <span id="open-display-13">
+                        <span class="offline-notice"style="color:#f27576!important;font-weight:bold">Cerrado</span>
+                        <span class="openclosed"></span>
+                        <span class="timerange" data-days="1,2,3,4,5," data-open="07:00" data-close="21:30">
+                        <span class="days">Mon - Fri</span>hasta las 21:30pm</span>
+                        <span class="timerange" data-days="" data-open="07:00" data-close="21:30">
+                        <span class="days">Sat</span>hasta las 9:30pm</span>
+                        <span class="timerange" data-days="" data-open="08:00" data-close="14:00">
+                            <span class="days"></span></span>
+                       
+                        <a class="biblioteca-map-location" href="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3734.9100561632704!2d-100.41290253609411!3d20.591730407931838!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d35acc6fbfd63f%3A0x16ade6f9e59dd0f2!2sBiblioteca%20Central%20UAQ!5e0!3m2!1ses-419!2smx!4v1680581952109!5m2!1ses-419!2smx" target="popup" onclick="window.open('https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3734.9100561632704!2d-100.41290253609411!3d20.591730407931838!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d35acc6fbfd63f%3A0x16ade6f9e59dd0f2!2sBiblioteca%20Central%20UAQ!5e0!3m2!1ses-419!2smx!4v1680581952109!5m2!1ses-419!2smx','popup','width=300,height=300'); return false;" title="Mapa">
+                        <i class="fa-solid fa-location-dot" aria-hidden="true">
+                        <span class="sr-only">Mapa</span></i></a>
+                        </p>
+                        
+                </div>
+            </li>
+
+            <li class="uaq-biblioteca">
+                <div class="mask1">
+                <div class="uaq-biblioteca-thumbnail">
+                    <img class="list-thumbnail" src="https://bibliotecasuaq.github.io/dgbsdi-site/micrositio/bibliotecas/tequisquiapan.jpg" style="width:143px;height:143px;object-fit:cover;"alt="">
+                </div></div>
+                <div class="uaq-biblioteca-info"style=>
+                    
+                    <p><a href="">Biblioteca Campus Tequisquiapan</a><br>
+                    
+                        <span class="list-phone"><a class="phone-link" href="" aria-label="Teléfonos" title="Teléfonos">
+                            <i class="fa-solid fa-phone" aria-hidden="true"><span class="sr-only">Biblioteca Campus Tequisquiapan</span></i></a> (442) 129200 Ext.43100</span><br>
+                        <span class="list-hours"><a class="full-hours-link" href="" aria-label="Horarios" title="Horarios">
+                            <i class="fa-solid fa-clock" aria-hidden="true"><span class="sr-only">Biblioteca Campus Tequisquiapan</span></i></a> L-V 8-16:00 hrs</span><br>
+                        <span class="list-email"><a class="biblioteca-email" href="mailto:central.bib@uaq.edu.mx" title="Correo"><i class="fa-solid fa-envelope" aria-hidden="true">
+                            <span class="sr-only"></i></a> tequisquiapan.bib@uaq.edu.mx</span><br>
+                        <span id="open-display-14">
+                        <span class="offline-notice"style="color:#f27576!important;font-weight:bold">Cerrado</span>
+                        <span class="openclosed"></span>
+                        <span class="timerange" data-days="1,2,3,4,5," data-open="08:00" data-close="16:00">
+                        <span class="days">Mon - Fri</span>hasta las 16:00pm</span>
+                        <span class="timerange" data-days="" data-open="07:00" data-close="21:30">
+                        <span class="days">Sat</span>hasta las 9:30pm</span>
+                        <span class="timerange" data-days="" data-open="08:00" data-close="14:00">
+                            <span class="days"></span></span>
+                       
+                        <a class="biblioteca-map-location" href="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3734.9100561632704!2d-100.41290253609411!3d20.591730407931838!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d35acc6fbfd63f%3A0x16ade6f9e59dd0f2!2sBiblioteca%20Central%20UAQ!5e0!3m2!1ses-419!2smx!4v1680581952109!5m2!1ses-419!2smx" target="popup" onclick="window.open('https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3734.9100561632704!2d-100.41290253609411!3d20.591730407931838!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d35acc6fbfd63f%3A0x16ade6f9e59dd0f2!2sBiblioteca%20Central%20UAQ!5e0!3m2!1ses-419!2smx!4v1680581952109!5m2!1ses-419!2smx','popup','width=300,height=300'); return false;" title="Mapa">
+                        <i class="fa-solid fa-location-dot" aria-hidden="true">
+                        <span class="sr-only">Mapa</span></i></a>
+                        </p>
+                        
+                </div>
+            </li>
+            
+            <li class="uaq-biblioteca">
+                <div class="mask1">
+                <div class="uaq-biblioteca-thumbnail">
+                    <img class="list-thumbnail" src="https://bibliotecasuaq.github.io/dgbsdi-site/micrositio/bibliotecas/posgrado.jpg" style="width:143px;height:143px;object-fit:cover;object-position:10% 10%"alt="">
+                </div></div>
+                <div class="uaq-biblioteca-info"style=>
+                    
+                    <p><a href="">Biblioteca Posgrado Contaduría</a><br>
+                    
+                        <span class="list-phone"><a class="phone-link" href="" aria-label="Teléfonos" title="Teléfonos">
+                            <i class="fa-solid fa-phone" aria-hidden="true"><span class="sr-only">Biblioteca Posgrado Contaduría</span></i></a> (442) 129200 Ext.5253</span><br>
+                        <span class="list-hours"><a class="full-hours-link" href="" aria-label="Horarios" title="Horarios">
+                            <i class="fa-solid fa-clock" aria-hidden="true"><span class="sr-only">Biblioteca Posgrado Contaduría</span></i></a> L-V 8-22:00, S 8-14:00 hrs</span><br>
+                        <span class="list-email"><a class="biblioteca-email" href="mailto:central.bib@uaq.edu.mx" title="Correo"><i class="fa-solid fa-envelope" aria-hidden="true">
+                            <span class="sr-only"></i></a> contaduria.bib@uaq.edu.mx</span><br>
+                        <span id="open-display-15">
+                        <span class="offline-notice"style="color:#f27576!important;font-weight:bold">Cerrado</span>
+                        <span class="openclosed"></span>
+                        <span class="timerange" data-days="1,2,3,4,5," data-open="08:00" data-close="16:00">
+                        <span class="days">Mon - Fri</span>hasta las 10 pm</span>
+                        <span class="timerange" data-days="6" data-open="08:00" data-close="16:00">
+                        <span class="days">Sat</span>hasta las 2 pm</span>
+                        <span class="timerange" data-days="" data-open="08:00" data-close="14:00">
+                            <span class="days"></span></span>
+                       
+                        <a class="biblioteca-map-location" href="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3734.9100561632704!2d-100.41290253609411!3d20.591730407931838!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d35acc6fbfd63f%3A0x16ade6f9e59dd0f2!2sBiblioteca%20Central%20UAQ!5e0!3m2!1ses-419!2smx!4v1680581952109!5m2!1ses-419!2smx" target="popup" onclick="window.open('https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3734.9100561632704!2d-100.41290253609411!3d20.591730407931838!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d35acc6fbfd63f%3A0x16ade6f9e59dd0f2!2sBiblioteca%20Central%20UAQ!5e0!3m2!1ses-419!2smx!4v1680581952109!5m2!1ses-419!2smx','popup','width=300,height=300'); return false;" title="Mapa">
+                        <i class="fa-solid fa-location-dot" aria-hidden="true">
+                        <span class="sr-only">Mapa</span></i></a>
+                        </p>
+                        
+                </div>
+            </li>
+
+            <li class="uaq-biblioteca">
+                <div class="mask1">
+                <div class="uaq-biblioteca-thumbnail">
+                    <img class="list-thumbnail" src="https://bibliotecasuaq.github.io/dgbsdi-site/micrositio/bibliotecas/sanjuan.jpg" style="width:143px;height:143px;object-fit:cover;object-position:10px -20px"alt="">
+                </div></div>
+                <div class="uaq-biblioteca-info"style=>
+                    
+                    <p><a href="">Biblioteca Campus SJR</a><br>
+                    
+                        <span class="list-phone"><a class="phone-link" href="" aria-label="Teléfonos" title="Teléfonos">
+                            <i class="fa-solid fa-phone" aria-hidden="true"><span class="sr-only">Biblioteca Campus San Juan del Río</span></i></a> (442) 129200 Ext.4810</span><br>
+                        <span class="list-hours"><a class="full-hours-link" href="" aria-label="Horarios" title="Horarios">
+                            <i class="fa-solid fa-clock" aria-hidden="true"><span class="sr-only">Biblioteca Campus San Juan del Río</span></i></a> L-V 8-21:00 hrs</span><br>
+                        <span class="list-email"><a class="biblioteca-email" href="mailto:central.bib@uaq.edu.mx" title="Correo"><i class="fa-solid fa-envelope" aria-hidden="true">
+                            <span class="sr-only"></i></a> sanjuan.bib@uaq.edu.mx</span><br>
+                        <span id="open-display-16">
+                        <span class="offline-notice"style="color:#f27576!important;font-weight:bold">Cerrado</span>
+                        <span class="openclosed"></span>
+                        <span class="timerange" data-days="1,2,3,4,5," data-open="08:00" data-close="16:00">
+                        <span class="days">Mon - Fri</span>hasta las 9 pm</span>
+                        <span class="timerange" data-days="" data-open="08:00" data-close="21:00">
+                        <span class="days">Sat</span>hasta las 2 pm</span>
+                        <span class="timerange" data-days="" data-open="08:00" data-close="14:00">
+                            <span class="days"></span></span>
+                       
+                        <a class="biblioteca-map-location" href="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3734.9100561632704!2d-100.41290253609411!3d20.591730407931838!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d35acc6fbfd63f%3A0x16ade6f9e59dd0f2!2sBiblioteca%20Central%20UAQ!5e0!3m2!1ses-419!2smx!4v1680581952109!5m2!1ses-419!2smx" target="popup" onclick="window.open('https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3734.9100561632704!2d-100.41290253609411!3d20.591730407931838!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d35acc6fbfd63f%3A0x16ade6f9e59dd0f2!2sBiblioteca%20Central%20UAQ!5e0!3m2!1ses-419!2smx!4v1680581952109!5m2!1ses-419!2smx','popup','width=300,height=300'); return false;" title="Mapa">
+                        <i class="fa-solid fa-location-dot" aria-hidden="true">
+                        <span class="sr-only">Mapa</span></i></a>
+                        </p>
+                        
+                </div>
+            </li>
+
+            <li class="uaq-biblioteca">
+                <div class="mask1">
+                <div class="uaq-biblioteca-thumbnail">
+                    <img class="list-thumbnail" src="https://bibliotecasuaq.github.io/dgbsdi-site/micrositio/bibliotecas/cadereyta.jpg" style="width:143px;height:143px;object-fit:cover;object-position:10px -20px"alt="">
+                </div></div>
+                <div class="uaq-biblioteca-info"style=>
+                    
+                    <p><a href="">Biblioteca Campus Cadereyta</a><br>
+                    
+                        <span class="list-phone"><a class="phone-link" href="" aria-label="Teléfonos" title="Teléfonos">
+                            <i class="fa-solid fa-phone" aria-hidden="true"><span class="sr-only">Biblioteca Campus Cadereyta</span></i></a> (442) 129200 Ext.64630</span><br>
+                        <span class="list-hours"><a class="full-hours-link" href="" aria-label="Horarios" title="Horarios">
+                            <i class="fa-solid fa-clock" aria-hidden="true"><span class="sr-only">Biblioteca Campus Cadereyta</span></i></a> L-V 7-15:00 hrs</span><br>
+                        <span class="list-email"><a class="biblioteca-email" href="mailto:central.bib@uaq.edu.mx" title="Correo"><i class="fa-solid fa-envelope" aria-hidden="true">
+                            <span class="sr-only"></i></a> cadereyta.bib@uaq.edu.mx</span><br>
+                        <span id="open-display-17">
+                        <span class="offline-notice"style="color:#f27576!important;font-weight:bold">Cerrado</span>
+                        <span class="openclosed"></span>
+                        <span class="timerange" data-days="1,2,3,4,5," data-open="07:00" data-close="15:00">
+                        <span class="days">Mon - Fri</span>hasta las 3 pm</span>
+                        <span class="timerange" data-days="" data-open="08:00" data-close="21:00">
+                        <span class="days">Sat</span>hasta las 2 pm</span>
+                        <span class="timerange" data-days="" data-open="08:00" data-close="14:00">
+                            <span class="days"></span></span>
+                       
+                        <a class="biblioteca-map-location" href="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3734.9100561632704!2d-100.41290253609411!3d20.591730407931838!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d35acc6fbfd63f%3A0x16ade6f9e59dd0f2!2sBiblioteca%20Central%20UAQ!5e0!3m2!1ses-419!2smx!4v1680581952109!5m2!1ses-419!2smx" target="popup" onclick="window.open('https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3734.9100561632704!2d-100.41290253609411!3d20.591730407931838!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d35acc6fbfd63f%3A0x16ade6f9e59dd0f2!2sBiblioteca%20Central%20UAQ!5e0!3m2!1ses-419!2smx!4v1680581952109!5m2!1ses-419!2smx','popup','width=300,height=300'); return false;" title="Mapa">
+                        <i class="fa-solid fa-location-dot" aria-hidden="true">
+                        <span class="sr-only">Mapa</span></i></a>
+                        </p>
+                        
+                </div>
+            </li>
+
+            <li class="uaq-biblioteca">
+                <div class="mask1">
+                <div class="uaq-biblioteca-thumbnail">
+                    <img class="list-thumbnail" src="https://bibliotecasuaq.github.io/dgbsdi-site/micrositio/bibliotecas/corregidora.jpg" style="width:143px;height:143px;object-fit:cover;object-position:10px -20px"alt="">
+                </div></div>
+                <div class="uaq-biblioteca-info"style=>
+                    
+                    <p><a href="">Biblioteca Campus Corregidora</a><br>
+                    
+                        <span class="list-phone"><a class="phone-link" href="" aria-label="Teléfonos" title="Teléfonos">
+                            <i class="fa-solid fa-phone" aria-hidden="true"><span class="sr-only">Biblioteca Campus Corregidora</span></i></a> (442) 129200 Ext.4505</span><br>
+                        <span class="list-hours"><a class="full-hours-link" href="" aria-label="Horarios" title="Horarios">
+                            <i class="fa-solid fa-clock" aria-hidden="true"><span class="sr-only">Biblioteca Campus Corregidora</span></i></a> L-V 8-21:00 hrs</span><br>
+                        <span class="list-email"><a class="biblioteca-email" href="mailto:central.bib@uaq.edu.mx" title="Correo"><i class="fa-solid fa-envelope" aria-hidden="true">
+                            <span class="sr-only"></i></a> corregidora.bib@uaq.edu.mx</span><br>
+                        <span id="open-display-18">
+                        <span class="offline-notice"style="color:#f27576!important;font-weight:bold">Cerrado</span>
+                        <span class="openclosed"></span>
+                        <span class="timerange" data-days="1,2,3,4,5," data-open="08:00" data-close="21:00">
+                        <span class="days">Mon - Fri</span>hasta las 9 pm</span>
+                        <span class="timerange" data-days="" data-open="08:00" data-close="21:00">
+                        <span class="days">Sat</span>hasta las 2 pm</span>
+                        <span class="timerange" data-days="" data-open="08:00" data-close="14:00">
+                            <span class="days"></span></span>
+                       
+                        <a class="biblioteca-map-location" href="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3734.9100561632704!2d-100.41290253609411!3d20.591730407931838!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d35acc6fbfd63f%3A0x16ade6f9e59dd0f2!2sBiblioteca%20Central%20UAQ!5e0!3m2!1ses-419!2smx!4v1680581952109!5m2!1ses-419!2smx" target="popup" onclick="window.open('https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3734.9100561632704!2d-100.41290253609411!3d20.591730407931838!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d35acc6fbfd63f%3A0x16ade6f9e59dd0f2!2sBiblioteca%20Central%20UAQ!5e0!3m2!1ses-419!2smx!4v1680581952109!5m2!1ses-419!2smx','popup','width=300,height=300'); return false;" title="Mapa">
+                        <i class="fa-solid fa-location-dot" aria-hidden="true">
+                        <span class="sr-only">Mapa</span></i></a>
+                        </p>
+                        
+                </div>
+            </li>
+
+            <li class="uaq-biblioteca">
+                <div class="mask1">
+                <div class="uaq-biblioteca-thumbnail">
+                    <img class="list-thumbnail" src="https://bibliotecasuaq.github.io/dgbsdi-site/micrositio/bibliotecas/jalpan.jpg" style="width:143px;height:143px;object-fit: scale-down;object-position: 4px 31px;"alt="">
+                </div></div>
+                <div class="uaq-biblioteca-info"style=>
+                    
+                    <p><a href="">Biblioteca Campus Jalpan</a><br>
+                    
+                        <span class="list-phone"><a class="phone-link" href="" aria-label="Teléfonos" title="Teléfonos">
+                            <i class="fa-solid fa-phone" aria-hidden="true"><span class="sr-only">Biblioteca Campus Jalpan</span></i></a> (442) 129200 Ext.4855</span><br>
+                        <span class="list-hours"><a class="full-hours-link" href="" aria-label="Horarios" title="Horarios">
+                            <i class="fa-solid fa-clock" aria-hidden="true"><span class="sr-only">Biblioteca Campus Jalpan</span></i></a> L-V 7-21:00 hrs</span><br>
+                        <span class="list-email"><a class="biblioteca-email" href="mailto:central.bib@uaq.edu.mx" title="Correo"><i class="fa-solid fa-envelope" aria-hidden="true">
+                            <span class="sr-only"></i></a> jalpan.bib@uaq.edu.mx</span><br>
+                        <span id="open-display-19">
+                        <span class="offline-notice"style="color:#f27576!important;font-weight:bold">Cerrado</span>
+                        <span class="openclosed"></span>
+                        <span class="timerange" data-days="1,2,3,4,5," data-open="07:00" data-close="21:00">
+                        <span class="days">Mon - Fri</span>hasta las 9 pm</span>
+                        <span class="timerange" data-days="" data-open="08:00" data-close="21:00">
+                        <span class="days">Sat</span>hasta las 2 pm</span>
+                        <span class="timerange" data-days="" data-open="08:00" data-close="14:00">
+                            <span class="days"></span></span>
+                       
+                        <a class="biblioteca-map-location" href="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3734.9100561632704!2d-100.41290253609411!3d20.591730407931838!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d35acc6fbfd63f%3A0x16ade6f9e59dd0f2!2sBiblioteca%20Central%20UAQ!5e0!3m2!1ses-419!2smx!4v1680581952109!5m2!1ses-419!2smx" target="popup" onclick="window.open('https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3734.9100561632704!2d-100.41290253609411!3d20.591730407931838!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d35acc6fbfd63f%3A0x16ade6f9e59dd0f2!2sBiblioteca%20Central%20UAQ!5e0!3m2!1ses-419!2smx!4v1680581952109!5m2!1ses-419!2smx','popup','width=300,height=300'); return false;" title="Mapa">
+                        <i class="fa-solid fa-location-dot" aria-hidden="true">
+                        <span class="sr-only">Mapa</span></i></a>
+                        </p>
+                        
+                </div>
+            </li>
+
+            <li class="uaq-biblioteca">
+                <div class="mask1">
+                <div class="uaq-biblioteca-thumbnail">
+                    <img class="list-thumbnail" src="https://bibliotecasuaq.github.io/dgbsdi-site/micrositio/bibliotecas/infantil.jpg" style="width:143px;height:143px;object-fit:cover;"alt="">
+                </div></div>
+                <div class="uaq-biblioteca-info"style=>
+                    
+                    <p><a href="">Biblioteca Infantil</a><br>
+                    
+                        <span class="list-phone"><a class="phone-link" href="" aria-label="Teléfonos" title="Teléfonos">
+                            <i class="fa-solid fa-phone" aria-hidden="true"><span class="sr-only">Biblioteca Infantil</span></i></a> (442) 129200 Ext.63550</span><br>
+                        <span class="list-hours"><a class="full-hours-link" href="" aria-label="Horarios" title="Horarios">
+                            <i class="fa-solid fa-clock" aria-hidden="true"><span class="sr-only">Biblioteca Infantil</span></i></a> L-V 9-19:00, S 9-14:00 hrs</span><br>
+                        <span class="list-email"><a class="biblioteca-email" href="mailto:central.bib@uaq.edu.mx" title="Correo"><i class="fa-solid fa-envelope" aria-hidden="true">
+                            <span class="sr-only"></i></a> biuaq.queretaro@gmail.com</span><br>
+                        <span id="open-display-20">
+                        <span class="offline-notice"style="color:#f27576!important;font-weight:bold">Cerrado</span>
+                        <span class="openclosed"></span>
+                        <span class="timerange" data-days="1,2,3,4,5," data-open="09:00" data-close="19:00">
+                        <span class="days">Mon - Fri</span>hasta las 7 pm</span>
+                        <span class="timerange" data-days="6" data-open="09:00" data-close="14:00">
+                        <span class="days">Sat</span>hasta las 9:30pm</span>
+                        <span class="timerange" data-days="" data-open="08:00" data-close="14:00">
+                            <span class="days"></span></span>
+                       
+                        <a class="biblioteca-map-location" href="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3734.9100561632704!2d-100.41290253609411!3d20.591730407931838!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d35acc6fbfd63f%3A0x16ade6f9e59dd0f2!2sBiblioteca%20Central%20UAQ!5e0!3m2!1ses-419!2smx!4v1680581952109!5m2!1ses-419!2smx" target="popup" onclick="window.open('https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3734.9100561632704!2d-100.41290253609411!3d20.591730407931838!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d35acc6fbfd63f%3A0x16ade6f9e59dd0f2!2sBiblioteca%20Central%20UAQ!5e0!3m2!1ses-419!2smx!4v1680581952109!5m2!1ses-419!2smx','popup','width=300,height=300'); return false;" title="Mapa">
+                        <i class="fa-solid fa-location-dot" aria-hidden="true">
+                        <span class="sr-only">Mapa</span></i></a>
+                        </p>
+                        
+                </div>
+            </li>
+
+            <li class="uaq-biblioteca">
+                <div class="mask1">
+                <div class="uaq-biblioteca-thumbnail">
+                    <img class="list-thumbnail" src="https://bibliotecasuaq.github.io/dgbsdi-site/micrositio/bibliotecas/escobedo.jpg" style="width:143px;height:143px;object-fit:cover;"alt="">
+                </div></div>
+                <div class="uaq-biblioteca-info"style=>
+                    
+                    <p><a href="">Biblioteca Prep. Pedro Escobedo</a><br>
+                    
+                        <span class="list-phone"><a class="phone-link" href="" aria-label="Teléfonos" title="Teléfonos">
+                            <i class="fa-solid fa-phone" aria-hidden="true"><span class="sr-only">Biblioteca Prep. Pedro Escobedo</span></i></a> (442) 129200 Ext.64460</span><br>
+                        <span class="list-hours"><a class="full-hours-link" href="" aria-label="Horarios" title="Horarios">
+                            <i class="fa-solid fa-clock" aria-hidden="true"><span class="sr-only">Biblioteca Prep. Pedro Escobedo</span></i></a> L-V 8-15:00 hrs</span><br>
+                        <span class="list-email"><a class="biblioteca-email" href="mailto:central.bib@uaq.edu.mx" title="Correo"><i class="fa-solid fa-envelope" aria-hidden="true">
+                            <span class="sr-only"></i></a> bibpescobedo@gmail.com</span><br>
+                        <span id="open-display-21">
+                        <span class="offline-notice"style="color:#f27576!important;font-weight:bold">Cerrado</span>
+                        <span class="openclosed"></span>
+                        <span class="timerange" data-days="1,2,3,4,5," data-open="08:00" data-close="15:00">
+                        <span class="days">Mon - Fri</span>hasta las 3 pm</span>
+                        <span class="timerange" data-days="" data-open="09:00" data-close="14:00">
+                        <span class="days">Sat</span>hasta las 9:30pm</span>
+                        <span class="timerange" data-days="" data-open="08:00" data-close="14:00">
+                            <span class="days"></span></span>
+                       
+                        <a class="biblioteca-map-location" href="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3734.9100561632704!2d-100.41290253609411!3d20.591730407931838!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d35acc6fbfd63f%3A0x16ade6f9e59dd0f2!2sBiblioteca%20Central%20UAQ!5e0!3m2!1ses-419!2smx!4v1680581952109!5m2!1ses-419!2smx" target="popup" onclick="window.open('https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3734.9100561632704!2d-100.41290253609411!3d20.591730407931838!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d35acc6fbfd63f%3A0x16ade6f9e59dd0f2!2sBiblioteca%20Central%20UAQ!5e0!3m2!1ses-419!2smx!4v1680581952109!5m2!1ses-419!2smx','popup','width=300,height=300'); return false;" title="Mapa">
+                        <i class="fa-solid fa-location-dot" aria-hidden="true">
+                        <span class="sr-only">Mapa</span></i></a>
+                        </p>
+                        
+                </div>
+            </li>
+
+            <li class="uaq-biblioteca">
+                <div class="mask1">
+                <div class="uaq-biblioteca-thumbnail">
+                    <img class="list-thumbnail" src="https://bibliotecasuaq.github.io/dgbsdi-site/micrositio/bibliotecas/prepasanjuan.jpg" style="width:143px;height:143px;object-fit:cover;"alt="">
+                </div></div>
+                <div class="uaq-biblioteca-info"style=>
+                    
+                    <p><a href="">Biblioteca Prep. SJR</a><br>
+                    
+                        <span class="list-phone"><a class="phone-link" href="" aria-label="Teléfonos" title="Teléfonos">
+                            <i class="fa-solid fa-phone" aria-hidden="true"><span class="sr-only">Biblioteca Prep. SJR</span></i></a> (442) 129200 Ext.64501</span><br>
+                        <span class="list-hours"><a class="full-hours-link" href="" aria-label="Horarios" title="Horarios">
+                            <i class="fa-solid fa-clock" aria-hidden="true"><span class="sr-only">Biblioteca Prep. SJR</span></i></a> L-V 8-20:00 hrs</span><br>
+                        <span class="list-email"><a class="biblioteca-email" href="mailto:central.bib@uaq.edu.mx" title="Correo"><i class="fa-solid fa-envelope" aria-hidden="true">
+                            <span class="sr-only"></i></a> prepasj.bib@uaq.edu.mx</span><br>
+                        <span id="open-display-22">
+                        <span class="offline-notice"style="color:#f27576!important;font-weight:bold">Cerrado</span>
+                        <span class="openclosed"></span>
+                        <span class="timerange" data-days="1,2,3,4,5," data-open="08:00" data-close="20:00">
+                        <span class="days">Mon - Fri</span>hasta las 8 pm</span>
+                        <span class="timerange" data-days="" data-open="09:00" data-close="14:00">
+                        <span class="days">Sat</span>hasta las 9:30pm</span>
+                        <span class="timerange" data-days="" data-open="08:00" data-close="14:00">
+                            <span class="days"></span></span>
+                       
+                        <a class="biblioteca-map-location" href="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3734.9100561632704!2d-100.41290253609411!3d20.591730407931838!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d35acc6fbfd63f%3A0x16ade6f9e59dd0f2!2sBiblioteca%20Central%20UAQ!5e0!3m2!1ses-419!2smx!4v1680581952109!5m2!1ses-419!2smx" target="popup" onclick="window.open('https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3734.9100561632704!2d-100.41290253609411!3d20.591730407931838!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d35acc6fbfd63f%3A0x16ade6f9e59dd0f2!2sBiblioteca%20Central%20UAQ!5e0!3m2!1ses-419!2smx!4v1680581952109!5m2!1ses-419!2smx','popup','width=300,height=300'); return false;" title="Mapa">
+                        <i class="fa-solid fa-location-dot" aria-hidden="true">
+                        <span class="sr-only">Mapa</span></i></a>
+                        </p>
+                        
+                </div>
+            </li>
+
+            <li class="uaq-biblioteca">
+                <div class="mask1">
+                <div class="uaq-biblioteca-thumbnail">
+                    <img class="list-thumbnail" src="https://bibliotecasuaq.github.io/dgbsdi-site/micrositio/bibliotecas/prepanorte.jpg" style="width:143px;height:143px;object-fit:scale-down;"alt="">
+                </div></div>
+                <div class="uaq-biblioteca-info"style=>
+                    
+                    <p><a href="">Biblioteca Prepa Norte</a><br>
+                    
+                        <span class="list-phone"><a class="phone-link" href="" aria-label="Teléfonos" title="Teléfonos">
+                            <i class="fa-solid fa-phone" aria-hidden="true"><span class="sr-only">Biblioteca Prepa Norte</span></i></a> (442) 129200 Ext.5045</span><br>
+                        <span class="list-hours"><a class="full-hours-link" href="" aria-label="Horarios" title="Horarios">
+                            <i class="fa-solid fa-clock" aria-hidden="true"><span class="sr-only">Biblioteca Prepa Norte</span></i></a> L-V 7-21:00 hrs</span><br>
+                        <span class="list-email"><a class="biblioteca-email" href="mailto:central.bib@uaq.edu.mx" title="Correo"><i class="fa-solid fa-envelope" aria-hidden="true">
+                            <span class="sr-only"></i></a> prepanorte.bib@uaq.edu.mx </span><br>
+                        <span id="open-display-23">
+                        <span class="offline-notice"style="color:#f27576!important;font-weight:bold">Cerrado</span>
+                        <span class="openclosed"></span>
+                        <span class="timerange" data-days="1,2,3,4,5," data-open="07:00" data-close="21:00">
+                        <span class="days">Mon - Fri</span>hasta las 9 pm</span>
+                        <span class="timerange" data-days="" data-open="09:00" data-close="14:00">
+                        <span class="days">Sat</span>hasta las 9:30pm</span>
+                        <span class="timerange" data-days="" data-open="08:00" data-close="14:00">
+                            <span class="days"></span></span>
+                       
+                        <a class="biblioteca-map-location" href="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3734.9100561632704!2d-100.41290253609411!3d20.591730407931838!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d35acc6fbfd63f%3A0x16ade6f9e59dd0f2!2sBiblioteca%20Central%20UAQ!5e0!3m2!1ses-419!2smx!4v1680581952109!5m2!1ses-419!2smx" target="popup" onclick="window.open('https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3734.9100561632704!2d-100.41290253609411!3d20.591730407931838!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d35acc6fbfd63f%3A0x16ade6f9e59dd0f2!2sBiblioteca%20Central%20UAQ!5e0!3m2!1ses-419!2smx!4v1680581952109!5m2!1ses-419!2smx','popup','width=300,height=300'); return false;" title="Mapa">
+                        <i class="fa-solid fa-location-dot" aria-hidden="true">
+                        <span class="sr-only">Mapa</span></i></a>
+                        </p>
+                        
+                </div>
+            </li>
+
+            <li class="uaq-biblioteca">
+                <div class="mask1">
+                <div class="uaq-biblioteca-thumbnail">
+                    <img class="list-thumbnail" src="https://bibliotecasuaq.github.io/dgbsdi-site/micrositio/bibliotecas/prepasur.jpg" style="width:143px;height:143px;object-fit:scale-down;"alt="">
+                </div></div>
+                <div class="uaq-biblioteca-info"style=>
+                    
+                    <p><a href="">Biblioteca Prepa Sur</a><br>
+                    
+                        <span class="list-phone"><a class="phone-link" href="" aria-label="Teléfonos" title="Teléfonos">
+                            <i class="fa-solid fa-phone" aria-hidden="true"><span class="sr-only">Biblioteca Prepa Sur</span></i></a> (442) 129200 Ext.5045</span><br>
+                        <span class="list-hours"><a class="full-hours-link" href="" aria-label="Horarios" title="Horarios">
+                            <i class="fa-solid fa-clock" aria-hidden="true"><span class="sr-only">Biblioteca Prepa Sur</span></i></a> L-V 7-21:30 hrs</span><br>
+                        <span class="list-email"><a class="biblioteca-email" href="mailto:central.bib@uaq.edu.mx" title="Correo"><i class="fa-solid fa-envelope" aria-hidden="true">
+                            <span class="sr-only"></i></a> prepasur.bib@uaq.edu.mx</span><br>
+                        <span id="open-display-24">
+                        <span class="offline-notice"style="color:#f27576!important;font-weight:bold">Cerrado</span>
+                        <span class="openclosed"></span>
+                        <span class="timerange" data-days="1,2,3,4,5," data-open="07:00" data-close="21:30">
+                        <span class="days">Mon - Fri</span>hasta las 9:30 pm</span>
+                        <span class="timerange" data-days="" data-open="09:00" data-close="14:00">
+                        <span class="days">Sat</span>hasta las 9:30pm</span>
+                        <span class="timerange" data-days="" data-open="08:00" data-close="14:00">
+                            <span class="days"></span></span>
+                       
+                        <a class="biblioteca-map-location" href="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3734.9100561632704!2d-100.41290253609411!3d20.591730407931838!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d35acc6fbfd63f%3A0x16ade6f9e59dd0f2!2sBiblioteca%20Central%20UAQ!5e0!3m2!1ses-419!2smx!4v1680581952109!5m2!1ses-419!2smx" target="popup" onclick="window.open('https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3734.9100561632704!2d-100.41290253609411!3d20.591730407931838!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d35acc6fbfd63f%3A0x16ade6f9e59dd0f2!2sBiblioteca%20Central%20UAQ!5e0!3m2!1ses-419!2smx!4v1680581952109!5m2!1ses-419!2smx','popup','width=300,height=300'); return false;" title="Mapa">
+                        <i class="fa-solid fa-location-dot" aria-hidden="true">
+                        <span class="sr-only">Mapa</span></i></a>
+                        </p>
+                        
+                </div>
+            </li>
+
+            <li class="uaq-biblioteca">
+                <div class="mask1">
+                <div class="uaq-biblioteca-thumbnail">
+                    <img class="list-thumbnail" src="https://bibliotecasuaq.github.io/dgbsdi-site/micrositio/bibliotecas/prepasur.jpg" style="width:143px;height:143px;object-fit:scale-down;"alt="">
+                </div></div>
+                <div class="uaq-biblioteca-info"style=>
+                    
+                    <p><a href="">Biblioteca Prepa Bicentenario</a><br>
+                    
+                        <span class="list-phone"><a class="phone-link" href="" aria-label="Teléfonos" title="Teléfonos">
+                            <i class="fa-solid fa-phone" aria-hidden="true"><span class="sr-only">Biblioteca Prepa Bicentenario</span></i></a> (442) 129200 Ext.64201</span><br>
+                        <span class="list-hours"><a class="full-hours-link" href="" aria-label="Horarios" title="Horarios">
+                            <i class="fa-solid fa-clock" aria-hidden="true"><span class="sr-only">Biblioteca Prepa Bicentenario</span></i></a> L-V 8-15:30 hrs</span><br>
+                        <span class="list-email"><a class="biblioteca-email" href="mailto:central.bib@uaq.edu.mx" title="Correo"><i class="fa-solid fa-envelope" aria-hidden="true">
+                            <span class="sr-only"></i></a> bicentenario.bib@uaq.edu.mx</span><br>
+                        <span id="open-display-25">
+                        <span class="offline-notice"style="color:#f27576!important;font-weight:bold">Cerrado</span>
+                        <span class="openclosed"></span>
+                        <span class="timerange" data-days="1,2,3,4,5," data-open="08:00" data-close="15:30">
+                        <span class="days">Mon - Fri</span>hasta las 3:30 pm</span>
+                        <span class="timerange" data-days="" data-open="09:00" data-close="14:00">
+                        <span class="days">Sat</span>hasta las 9:30pm</span>
+                        <span class="timerange" data-days="" data-open="08:00" data-close="14:00">
+                            <span class="days"></span></span>
+                       
+                        <a class="biblioteca-map-location" href="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3734.9100561632704!2d-100.41290253609411!3d20.591730407931838!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d35acc6fbfd63f%3A0x16ade6f9e59dd0f2!2sBiblioteca%20Central%20UAQ!5e0!3m2!1ses-419!2smx!4v1680581952109!5m2!1ses-419!2smx" target="popup" onclick="window.open('https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3734.9100561632704!2d-100.41290253609411!3d20.591730407931838!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d35acc6fbfd63f%3A0x16ade6f9e59dd0f2!2sBiblioteca%20Central%20UAQ!5e0!3m2!1ses-419!2smx!4v1680581952109!5m2!1ses-419!2smx','popup','width=300,height=300'); return false;" title="Mapa">
+                        <i class="fa-solid fa-location-dot" aria-hidden="true">
+                        <span class="sr-only">Mapa</span></i></a>
+                        </p>
+                        
+                </div>
+            </li>
+           
+           
+        </ul>
+
+ 
+    
+       
+    </div>
+
+<script>
+// Biblioteca Central Display Abierto-Cerrado
+
+function isOpen(timeRangeEl, date) {
+    var day = '' + date.getDay();
+    var hhmm = ('0' + date.getHours()).slice(-2) + ':' + ('0' + date.getMinutes()).slice(-2);
+
+    var days = timeRangeEl.getAttribute('data-days');
+    var openTime = timeRangeEl.getAttribute('data-open');
+    var closeTime = timeRangeEl.getAttribute('data-close');
+    return days.indexOf(day) >= 0 && openTime <= hhmm && hhmm < closeTime;
+}
+
+function openClose() {
+    var date = new Date();
+    var display = document.getElementById('open-display');
+    var els = display.getElementsByClassName('timerange');
+    var anyActive = false;
+    for (var i = 0; i < els.length; i++) {
+        if (isOpen(els[i], date)) {
+            anyActive = true;
+            els[i].className = els[i].className.replace(/ *inactive\b/g, '');
+        } else if (els[i].className.indexOf('inactive') < 0) {
+            els[i].className += ' inactive';
+        }
+    }
+    if (anyActive) {
+        display.className = 'open';
+    } else {
+        display.className = 'closed';
+    }
+}
+
+setInterval(openClose, 5000);
+openClose();
+</script>
+<script>
+
+// Biblioteca Centro Histórico Display Abierto-Cerrado
+
+function isOpen(timeRangeEl, date) {
+    var day = '' + date.getDay();
+    var hhmm = ('0' + date.getHours()).slice(-2) + ':' + ('0' + date.getMinutes()).slice(-2);
+
+    var days = timeRangeEl.getAttribute('data-days');
+    var openTime = timeRangeEl.getAttribute('data-open');
+    var closeTime = timeRangeEl.getAttribute('data-close');
+    return days.indexOf(day) >= 0 && openTime <= hhmm && hhmm < closeTime;
+}
+
+function openClose() {
+    var date = new Date();
+    var display = document.getElementById('open-display-2');
+    var els = display.getElementsByClassName('timerange');
+    var anyActive = false;
+    for (var i = 0; i < els.length; i++) {
+        if (isOpen(els[i], date)) {
+            anyActive = true;
+            els[i].className = els[i].className.replace(/ *inactive\b/g, '');
+        } else if (els[i].className.indexOf('inactive') < 0) {
+            els[i].className += ' inactive';
+        }
+    }
+    if (anyActive) {
+        display.className = 'open';
+    } else {
+        display.className = 'closed';
+    }
+}
+
+setInterval(openClose, 5000);
+openClose();
+
+
+</script>
+<script>
+// Biblioteca Juriquilla Display Abierto-Cerrado
+    function isOpen(timeRangeEl, date) {
+        var day = '' + date.getDay();
+        var hhmm = ('0' + date.getHours()).slice(-2) + ':' + ('0' + date.getMinutes()).slice(-2);
+    
+        var days = timeRangeEl.getAttribute('data-days');
+        var openTime = timeRangeEl.getAttribute('data-open');
+        var closeTime = timeRangeEl.getAttribute('data-close');
+        return days.indexOf(day) >= 0 && openTime <= hhmm && hhmm < closeTime;
+    }
+    
+    function openClose() {
+        var date = new Date();
+        var display = document.getElementById('open-display-3');
+        var els = display.getElementsByClassName('timerange');
+        var anyActive = false;
+        for (var i = 0; i < els.length; i++) {
+            if (isOpen(els[i], date)) {
+                anyActive = true;
+                els[i].className = els[i].className.replace(/ *inactive\b/g, '');
+            } else if (els[i].className.indexOf('inactive') < 0) {
+                els[i].className += ' inactive';
+            }
+        }
+        if (anyActive) {
+            display.className = 'open';
+        } else {
+            display.className = 'closed';
+        }
+    }
+    
+    setInterval(openClose, 5000);
+    openClose();
+    
+</script>
+
+<script>
+
+// Biblioteca Aeropuerto Display Abierto-Cerrado
+    function isOpen(timeRangeEl, date) {
+        var day = '' + date.getDay();
+        var hhmm = ('0' + date.getHours()).slice(-2) + ':' + ('0' + date.getMinutes()).slice(-2);
+    
+        var days = timeRangeEl.getAttribute('data-days');
+        var openTime = timeRangeEl.getAttribute('data-open');
+        var closeTime = timeRangeEl.getAttribute('data-close');
+        return days.indexOf(day) >= 0 && openTime <= hhmm && hhmm < closeTime;
+    }
+    
+    function openClose() {
+        var date = new Date();
+        var display = document.getElementById('open-display-4');
+        var els = display.getElementsByClassName('timerange');
+        var anyActive = false;
+        for (var i = 0; i < els.length; i++) {
+            if (isOpen(els[i], date)) {
+                anyActive = true;
+                els[i].className = els[i].className.replace(/ *inactive\b/g, '');
+            } else if (els[i].className.indexOf('inactive') < 0) {
+                els[i].className += ' inactive';
+            }
+        }
+        if (anyActive) {
+            display.className = 'open';
+        } else {
+            display.className = 'closed';
+        }
+    }
+    
+    setInterval(openClose, 5000);
+    openClose();
+    
+    
+</script>
+<script>
+
+    // Biblioteca Amazcala Display Abierto-Cerrado
+        function isOpen(timeRangeEl, date) {
+            var day = '' + date.getDay();
+            var hhmm = ('0' + date.getHours()).slice(-2) + ':' + ('0' + date.getMinutes()).slice(-2);
+        
+            var days = timeRangeEl.getAttribute('data-days');
+            var openTime = timeRangeEl.getAttribute('data-open');
+            var closeTime = timeRangeEl.getAttribute('data-close');
+            return days.indexOf(day) >= 0 && openTime <= hhmm && hhmm < closeTime;
+        }
+        
+        function openClose() {
+            var date = new Date();
+            var display = document.getElementById('open-display-5');
+            var els = display.getElementsByClassName('timerange');
+            var anyActive = false;
+            for (var i = 0; i < els.length; i++) {
+                if (isOpen(els[i], date)) {
+                    anyActive = true;
+                    els[i].className = els[i].className.replace(/ *inactive\b/g, '');
+                } else if (els[i].className.indexOf('inactive') < 0) {
+                    els[i].className += ' inactive';
+                }
+            }
+            if (anyActive) {
+                display.className = 'open';
+            } else {
+                display.className = 'closed';
+            }
+        }
+        
+        setInterval(openClose, 5000);
+        openClose();
+        
+        
+    </script>
+<script>
+
+    // Biblioteca Amealco Display Abierto-Cerrado
+        function isOpen(timeRangeEl, date) {
+            var day = '' + date.getDay();
+            var hhmm = ('0' + date.getHours()).slice(-2) + ':' + ('0' + date.getMinutes()).slice(-2);
+        
+            var days = timeRangeEl.getAttribute('data-days');
+            var openTime = timeRangeEl.getAttribute('data-open');
+            var closeTime = timeRangeEl.getAttribute('data-close');
+            return days.indexOf(day) >= 0 && openTime <= hhmm && hhmm < closeTime;
+        }
+        
+        function openClose() {
+            var date = new Date();
+            var display = document.getElementById('open-display-6');
+            var els = display.getElementsByClassName('timerange');
+            var anyActive = false;
+            for (var i = 0; i < els.length; i++) {
+                if (isOpen(els[i], date)) {
+                    anyActive = true;
+                    els[i].className = els[i].className.replace(/ *inactive\b/g, '');
+                } else if (els[i].className.indexOf('inactive') < 0) {
+                    els[i].className += ' inactive';
+                }
+            }
+            if (anyActive) {
+                display.className = 'open';
+            } else {
+                display.className = 'closed';
+            }
+        }
+        
+        setInterval(openClose, 5000);
+        openClose();
+        
+        
+    </script>
+<script>
+
+    // Biblioteca Psicología y Educación Display Abierto-Cerrado
+        function isOpen(timeRangeEl, date) {
+            var day = '' + date.getDay();
+            var hhmm = ('0' + date.getHours()).slice(-2) + ':' + ('0' + date.getMinutes()).slice(-2);
+        
+            var days = timeRangeEl.getAttribute('data-days');
+            var openTime = timeRangeEl.getAttribute('data-open');
+            var closeTime = timeRangeEl.getAttribute('data-close');
+            return days.indexOf(day) >= 0 && openTime <= hhmm && hhmm < closeTime;
+        }
+        
+        function openClose() {
+            var date = new Date();
+            var display = document.getElementById('open-display-7');
+            var els = display.getElementsByClassName('timerange');
+            var anyActive = false;
+            for (var i = 0; i < els.length; i++) {
+                if (isOpen(els[i], date)) {
+                    anyActive = true;
+                    els[i].className = els[i].className.replace(/ *inactive\b/g, '');
+                } else if (els[i].className.indexOf('inactive') < 0) {
+                    els[i].className += ' inactive';
+                }
+            }
+            if (anyActive) {
+                display.className = 'open';
+            } else {
+                display.className = 'closed';
+            }
+        }
+        
+        setInterval(openClose, 5000);
+        openClose();
+        
+        
+    </script>
+    <script>
+
+        // Biblioteca Medicina Display Abierto-Cerrado
+            function isOpen(timeRangeEl, date) {
+                var day = '' + date.getDay();
+                var hhmm = ('0' + date.getHours()).slice(-2) + ':' + ('0' + date.getMinutes()).slice(-2);
+            
+                var days = timeRangeEl.getAttribute('data-days');
+                var openTime = timeRangeEl.getAttribute('data-open');
+                var closeTime = timeRangeEl.getAttribute('data-close');
+                return days.indexOf(day) >= 0 && openTime <= hhmm && hhmm < closeTime;
+            }
+            
+            function openClose() {
+                var date = new Date();
+                var display = document.getElementById('open-display-8');
+                var els = display.getElementsByClassName('timerange');
+                var anyActive = false;
+                for (var i = 0; i < els.length; i++) {
+                    if (isOpen(els[i], date)) {
+                        anyActive = true;
+                        els[i].className = els[i].className.replace(/ *inactive\b/g, '');
+                    } else if (els[i].className.indexOf('inactive') < 0) {
+                        els[i].className += ' inactive';
+                    }
+                }
+                if (anyActive) {
+                    display.className = 'open';
+                } else {
+                    display.className = 'closed';
+                }
+            }
+            
+            setInterval(openClose, 5000);
+            openClose();
+            
+            
+        </script>
+<script>
+
+    // Biblioteca Conta Display Abierto-Cerrado
+        function isOpen(timeRangeEl, date) {
+            var day = '' + date.getDay();
+            var hhmm = ('0' + date.getHours()).slice(-2) + ':' + ('0' + date.getMinutes()).slice(-2);
+        
+            var days = timeRangeEl.getAttribute('data-days');
+            var openTime = timeRangeEl.getAttribute('data-open');
+            var closeTime = timeRangeEl.getAttribute('data-close');
+            return days.indexOf(day) >= 0 && openTime <= hhmm && hhmm < closeTime;
+        }
+        
+        function openClose() {
+            var date = new Date();
+            var display = document.getElementById('open-display-9');
+            var els = display.getElementsByClassName('timerange');
+            var anyActive = false;
+            for (var i = 0; i < els.length; i++) {
+                if (isOpen(els[i], date)) {
+                    anyActive = true;
+                    els[i].className = els[i].className.replace(/ *inactive\b/g, '');
+                } else if (els[i].className.indexOf('inactive') < 0) {
+                    els[i].className += ' inactive';
+                }
+            }
+            if (anyActive) {
+                display.className = 'open';
+            } else {
+                display.className = 'closed';
+            }
+        }
+        
+        setInterval(openClose, 5000);
+        openClose();
+        
+        
+</script>
+<script>
+
+    // Biblioteca Derecho Display Abierto-Cerrado
+        function isOpen(timeRangeEl, date) {
+            var day = '' + date.getDay();
+            var hhmm = ('0' + date.getHours()).slice(-2) + ':' + ('0' + date.getMinutes()).slice(-2);
+        
+            var days = timeRangeEl.getAttribute('data-days');
+            var openTime = timeRangeEl.getAttribute('data-open');
+            var closeTime = timeRangeEl.getAttribute('data-close');
+            return days.indexOf(day) >= 0 && openTime <= hhmm && hhmm < closeTime;
+        }
+        
+        function openClose() {
+            var date = new Date();
+            var display = document.getElementById('open-display-10');
+            var els = display.getElementsByClassName('timerange');
+            var anyActive = false;
+            for (var i = 0; i < els.length; i++) {
+                if (isOpen(els[i], date)) {
+                    anyActive = true;
+                    els[i].className = els[i].className.replace(/ *inactive\b/g, '');
+                } else if (els[i].className.indexOf('inactive') < 0) {
+                    els[i].className += ' inactive';
+                }
+            }
+            if (anyActive) {
+                display.className = 'open';
+            } else {
+                display.className = 'closed';
+            }
+        }
+        
+        setInterval(openClose, 5000);
+        openClose();
+        
+        
+</script>
+<script>
+
+    // Biblioteca Artes Display Abierto-Cerrado
+        function isOpen(timeRangeEl, date) {
+            var day = '' + date.getDay();
+            var hhmm = ('0' + date.getHours()).slice(-2) + ':' + ('0' + date.getMinutes()).slice(-2);
+        
+            var days = timeRangeEl.getAttribute('data-days');
+            var openTime = timeRangeEl.getAttribute('data-open');
+            var closeTime = timeRangeEl.getAttribute('data-close');
+            return days.indexOf(day) >= 0 && openTime <= hhmm && hhmm < closeTime;
+        }
+        
+        function openClose() {
+            var date = new Date();
+            var display = document.getElementById('open-display-11');
+            var els = display.getElementsByClassName('timerange');
+            var anyActive = false;
+            for (var i = 0; i < els.length; i++) {
+                if (isOpen(els[i], date)) {
+                    anyActive = true;
+                    els[i].className = els[i].className.replace(/ *inactive\b/g, '');
+                } else if (els[i].className.indexOf('inactive') < 0) {
+                    els[i].className += ' inactive';
+                }
+            }
+            if (anyActive) {
+                display.className = 'open';
+            } else {
+                display.className = 'closed';
+            }
+        }
+        
+        setInterval(openClose, 5000);
+        openClose();
+        
+        
+</script>
+<script>
+
+    // Biblioteca C.P.yS. Display Abierto-Cerrado
+        function isOpen(timeRangeEl, date) {
+            var day = '' + date.getDay();
+            var hhmm = ('0' + date.getHours()).slice(-2) + ':' + ('0' + date.getMinutes()).slice(-2);
+        
+            var days = timeRangeEl.getAttribute('data-days');
+            var openTime = timeRangeEl.getAttribute('data-open');
+            var closeTime = timeRangeEl.getAttribute('data-close');
+            return days.indexOf(day) >= 0 && openTime <= hhmm && hhmm < closeTime;
+        }
+        
+        function openClose() {
+            var date = new Date();
+            var display = document.getElementById('open-display-12');
+            var els = display.getElementsByClassName('timerange');
+            var anyActive = false;
+            for (var i = 0; i < els.length; i++) {
+                if (isOpen(els[i], date)) {
+                    anyActive = true;
+                    els[i].className = els[i].className.replace(/ *inactive\b/g, '');
+                } else if (els[i].className.indexOf('inactive') < 0) {
+                    els[i].className += ' inactive';
+                }
+            }
+            if (anyActive) {
+                display.className = 'open';
+            } else {
+                display.className = 'closed';
+            }
+        }
+        
+        setInterval(openClose, 5000);
+        openClose();
+        
+        
+</script>
+<script>
+
+    // Biblioteca Enfermería Display Abierto-Cerrado
+        function isOpen(timeRangeEl, date) {
+            var day = '' + date.getDay();
+            var hhmm = ('0' + date.getHours()).slice(-2) + ':' + ('0' + date.getMinutes()).slice(-2);
+        
+            var days = timeRangeEl.getAttribute('data-days');
+            var openTime = timeRangeEl.getAttribute('data-open');
+            var closeTime = timeRangeEl.getAttribute('data-close');
+            return days.indexOf(day) >= 0 && openTime <= hhmm && hhmm < closeTime;
+        }
+        
+        function openClose() {
+            var date = new Date();
+            var display = document.getElementById('open-display-13');
+            var els = display.getElementsByClassName('timerange');
+            var anyActive = false;
+            for (var i = 0; i < els.length; i++) {
+                if (isOpen(els[i], date)) {
+                    anyActive = true;
+                    els[i].className = els[i].className.replace(/ *inactive\b/g, '');
+                } else if (els[i].className.indexOf('inactive') < 0) {
+                    els[i].className += ' inactive';
+                }
+            }
+            if (anyActive) {
+                display.className = 'open';
+            } else {
+                display.className = 'closed';
+            }
+        }
+        
+        setInterval(openClose, 5000);
+        openClose();
+        
+        
+</script>
+<script>
+
+    // Biblioteca Tequisquiapan Display Abierto-Cerrado
+        function isOpen(timeRangeEl, date) {
+            var day = '' + date.getDay();
+            var hhmm = ('0' + date.getHours()).slice(-2) + ':' + ('0' + date.getMinutes()).slice(-2);
+        
+            var days = timeRangeEl.getAttribute('data-days');
+            var openTime = timeRangeEl.getAttribute('data-open');
+            var closeTime = timeRangeEl.getAttribute('data-close');
+            return days.indexOf(day) >= 0 && openTime <= hhmm && hhmm < closeTime;
+        }
+        
+        function openClose() {
+            var date = new Date();
+            var display = document.getElementById('open-display-14');
+            var els = display.getElementsByClassName('timerange');
+            var anyActive = false;
+            for (var i = 0; i < els.length; i++) {
+                if (isOpen(els[i], date)) {
+                    anyActive = true;
+                    els[i].className = els[i].className.replace(/ *inactive\b/g, '');
+                } else if (els[i].className.indexOf('inactive') < 0) {
+                    els[i].className += ' inactive';
+                }
+            }
+            if (anyActive) {
+                display.className = 'open';
+            } else {
+                display.className = 'closed';
+            }
+        }
+        
+        setInterval(openClose, 5000);
+        openClose();
+        
+        
+</script>
+<script>
+
+    // Biblioteca Posgrado Display Abierto-Cerrado
+        function isOpen(timeRangeEl, date) {
+            var day = '' + date.getDay();
+            var hhmm = ('0' + date.getHours()).slice(-2) + ':' + ('0' + date.getMinutes()).slice(-2);
+        
+            var days = timeRangeEl.getAttribute('data-days');
+            var openTime = timeRangeEl.getAttribute('data-open');
+            var closeTime = timeRangeEl.getAttribute('data-close');
+            return days.indexOf(day) >= 0 && openTime <= hhmm && hhmm < closeTime;
+        }
+        
+        function openClose() {
+            var date = new Date();
+            var display = document.getElementById('open-display-15');
+            var els = display.getElementsByClassName('timerange');
+            var anyActive = false;
+            for (var i = 0; i < els.length; i++) {
+                if (isOpen(els[i], date)) {
+                    anyActive = true;
+                    els[i].className = els[i].className.replace(/ *inactive\b/g, '');
+                } else if (els[i].className.indexOf('inactive') < 0) {
+                    els[i].className += ' inactive';
+                }
+            }
+            if (anyActive) {
+                display.className = 'open';
+            } else {
+                display.className = 'closed';
+            }
+        }
+        
+        setInterval(openClose, 5000);
+        openClose();
+        
+        
+</script>
+<script>
+
+    // Biblioteca San Juan Display Abierto-Cerrado
+        function isOpen(timeRangeEl, date) {
+            var day = '' + date.getDay();
+            var hhmm = ('0' + date.getHours()).slice(-2) + ':' + ('0' + date.getMinutes()).slice(-2);
+        
+            var days = timeRangeEl.getAttribute('data-days');
+            var openTime = timeRangeEl.getAttribute('data-open');
+            var closeTime = timeRangeEl.getAttribute('data-close');
+            return days.indexOf(day) >= 0 && openTime <= hhmm && hhmm < closeTime;
+        }
+        
+        function openClose() {
+            var date = new Date();
+            var display = document.getElementById('open-display-16');
+            var els = display.getElementsByClassName('timerange');
+            var anyActive = false;
+            for (var i = 0; i < els.length; i++) {
+                if (isOpen(els[i], date)) {
+                    anyActive = true;
+                    els[i].className = els[i].className.replace(/ *inactive\b/g, '');
+                } else if (els[i].className.indexOf('inactive') < 0) {
+                    els[i].className += ' inactive';
+                }
+            }
+            if (anyActive) {
+                display.className = 'open';
+            } else {
+                display.className = 'closed';
+            }
+        }
+        
+        setInterval(openClose, 5000);
+        openClose();
+        
+        
+</script>
+<script>
+
+    // Biblioteca Cadereyta Display Abierto-Cerrado
+        function isOpen(timeRangeEl, date) {
+            var day = '' + date.getDay();
+            var hhmm = ('0' + date.getHours()).slice(-2) + ':' + ('0' + date.getMinutes()).slice(-2);
+        
+            var days = timeRangeEl.getAttribute('data-days');
+            var openTime = timeRangeEl.getAttribute('data-open');
+            var closeTime = timeRangeEl.getAttribute('data-close');
+            return days.indexOf(day) >= 0 && openTime <= hhmm && hhmm < closeTime;
+        }
+        
+        function openClose() {
+            var date = new Date();
+            var display = document.getElementById('open-display-17');
+            var els = display.getElementsByClassName('timerange');
+            var anyActive = false;
+            for (var i = 0; i < els.length; i++) {
+                if (isOpen(els[i], date)) {
+                    anyActive = true;
+                    els[i].className = els[i].className.replace(/ *inactive\b/g, '');
+                } else if (els[i].className.indexOf('inactive') < 0) {
+                    els[i].className += ' inactive';
+                }
+            }
+            if (anyActive) {
+                display.className = 'open';
+            } else {
+                display.className = 'closed';
+            }
+        }
+        
+        setInterval(openClose, 5000);
+        openClose();
+        
+        
+</script>
+<script>
+
+    // Biblioteca Corregidora Display Abierto-Cerrado
+        function isOpen(timeRangeEl, date) {
+            var day = '' + date.getDay();
+            var hhmm = ('0' + date.getHours()).slice(-2) + ':' + ('0' + date.getMinutes()).slice(-2);
+        
+            var days = timeRangeEl.getAttribute('data-days');
+            var openTime = timeRangeEl.getAttribute('data-open');
+            var closeTime = timeRangeEl.getAttribute('data-close');
+            return days.indexOf(day) >= 0 && openTime <= hhmm && hhmm < closeTime;
+        }
+        
+        function openClose() {
+            var date = new Date();
+            var display = document.getElementById('open-display-18');
+            var els = display.getElementsByClassName('timerange');
+            var anyActive = false;
+            for (var i = 0; i < els.length; i++) {
+                if (isOpen(els[i], date)) {
+                    anyActive = true;
+                    els[i].className = els[i].className.replace(/ *inactive\b/g, '');
+                } else if (els[i].className.indexOf('inactive') < 0) {
+                    els[i].className += ' inactive';
+                }
+            }
+            if (anyActive) {
+                display.className = 'open';
+            } else {
+                display.className = 'closed';
+            }
+        }
+        
+        setInterval(openClose, 5000);
+        openClose();
+        
+        
+</script>
+<script>
+
+    // Biblioteca Jalpan Display Abierto-Cerrado
+        function isOpen(timeRangeEl, date) {
+            var day = '' + date.getDay();
+            var hhmm = ('0' + date.getHours()).slice(-2) + ':' + ('0' + date.getMinutes()).slice(-2);
+        
+            var days = timeRangeEl.getAttribute('data-days');
+            var openTime = timeRangeEl.getAttribute('data-open');
+            var closeTime = timeRangeEl.getAttribute('data-close');
+            return days.indexOf(day) >= 0 && openTime <= hhmm && hhmm < closeTime;
+        }
+        
+        function openClose() {
+            var date = new Date();
+            var display = document.getElementById('open-display-19');
+            var els = display.getElementsByClassName('timerange');
+            var anyActive = false;
+            for (var i = 0; i < els.length; i++) {
+                if (isOpen(els[i], date)) {
+                    anyActive = true;
+                    els[i].className = els[i].className.replace(/ *inactive\b/g, '');
+                } else if (els[i].className.indexOf('inactive') < 0) {
+                    els[i].className += ' inactive';
+                }
+            }
+            if (anyActive) {
+                display.className = 'open';
+            } else {
+                display.className = 'closed';
+            }
+        }
+        
+        setInterval(openClose, 5000);
+        openClose();
+        
+        
+</script>
+<script>
+
+    // Biblioteca Infantil Display Abierto-Cerrado
+        function isOpen(timeRangeEl, date) {
+            var day = '' + date.getDay();
+            var hhmm = ('0' + date.getHours()).slice(-2) + ':' + ('0' + date.getMinutes()).slice(-2);
+        
+            var days = timeRangeEl.getAttribute('data-days');
+            var openTime = timeRangeEl.getAttribute('data-open');
+            var closeTime = timeRangeEl.getAttribute('data-close');
+            return days.indexOf(day) >= 0 && openTime <= hhmm && hhmm < closeTime;
+        }
+        
+        function openClose() {
+            var date = new Date();
+            var display = document.getElementById('open-display-20');
+            var els = display.getElementsByClassName('timerange');
+            var anyActive = false;
+            for (var i = 0; i < els.length; i++) {
+                if (isOpen(els[i], date)) {
+                    anyActive = true;
+                    els[i].className = els[i].className.replace(/ *inactive\b/g, '');
+                } else if (els[i].className.indexOf('inactive') < 0) {
+                    els[i].className += ' inactive';
+                }
+            }
+            if (anyActive) {
+                display.className = 'open';
+            } else {
+                display.className = 'closed';
+            }
+        }
+        
+        setInterval(openClose, 5000);
+        openClose();
+        
+        
+</script>
+<script>
+
+    // Biblioteca P.Escobedo Display Abierto-Cerrado
+        function isOpen(timeRangeEl, date) {
+            var day = '' + date.getDay();
+            var hhmm = ('0' + date.getHours()).slice(-2) + ':' + ('0' + date.getMinutes()).slice(-2);
+        
+            var days = timeRangeEl.getAttribute('data-days');
+            var openTime = timeRangeEl.getAttribute('data-open');
+            var closeTime = timeRangeEl.getAttribute('data-close');
+            return days.indexOf(day) >= 0 && openTime <= hhmm && hhmm < closeTime;
+        }
+        
+        function openClose() {
+            var date = new Date();
+            var display = document.getElementById('open-display-21');
+            var els = display.getElementsByClassName('timerange');
+            var anyActive = false;
+            for (var i = 0; i < els.length; i++) {
+                if (isOpen(els[i], date)) {
+                    anyActive = true;
+                    els[i].className = els[i].className.replace(/ *inactive\b/g, '');
+                } else if (els[i].className.indexOf('inactive') < 0) {
+                    els[i].className += ' inactive';
+                }
+            }
+            if (anyActive) {
+                display.className = 'open';
+            } else {
+                display.className = 'closed';
+            }
+        }
+        
+        setInterval(openClose, 5000);
+        openClose();
+        
+        
+</script>
+<script>
+
+    // Biblioteca Prepa SJR Display Abierto-Cerrado
+        function isOpen(timeRangeEl, date) {
+            var day = '' + date.getDay();
+            var hhmm = ('0' + date.getHours()).slice(-2) + ':' + ('0' + date.getMinutes()).slice(-2);
+        
+            var days = timeRangeEl.getAttribute('data-days');
+            var openTime = timeRangeEl.getAttribute('data-open');
+            var closeTime = timeRangeEl.getAttribute('data-close');
+            return days.indexOf(day) >= 0 && openTime <= hhmm && hhmm < closeTime;
+        }
+        
+        function openClose() {
+            var date = new Date();
+            var display = document.getElementById('open-display-22');
+            var els = display.getElementsByClassName('timerange');
+            var anyActive = false;
+            for (var i = 0; i < els.length; i++) {
+                if (isOpen(els[i], date)) {
+                    anyActive = true;
+                    els[i].className = els[i].className.replace(/ *inactive\b/g, '');
+                } else if (els[i].className.indexOf('inactive') < 0) {
+                    els[i].className += ' inactive';
+                }
+            }
+            if (anyActive) {
+                display.className = 'open';
+            } else {
+                display.className = 'closed';
+            }
+        }
+        
+        setInterval(openClose, 5000);
+        openClose();
+        
+        
+</script>
+<script>
+
+    // Biblioteca Prepa Norte Display Abierto-Cerrado
+        function isOpen(timeRangeEl, date) {
+            var day = '' + date.getDay();
+            var hhmm = ('0' + date.getHours()).slice(-2) + ':' + ('0' + date.getMinutes()).slice(-2);
+        
+            var days = timeRangeEl.getAttribute('data-days');
+            var openTime = timeRangeEl.getAttribute('data-open');
+            var closeTime = timeRangeEl.getAttribute('data-close');
+            return days.indexOf(day) >= 0 && openTime <= hhmm && hhmm < closeTime;
+        }
+        
+        function openClose() {
+            var date = new Date();
+            var display = document.getElementById('open-display-23');
+            var els = display.getElementsByClassName('timerange');
+            var anyActive = false;
+            for (var i = 0; i < els.length; i++) {
+                if (isOpen(els[i], date)) {
+                    anyActive = true;
+                    els[i].className = els[i].className.replace(/ *inactive\b/g, '');
+                } else if (els[i].className.indexOf('inactive') < 0) {
+                    els[i].className += ' inactive';
+                }
+            }
+            if (anyActive) {
+                display.className = 'open';
+            } else {
+                display.className = 'closed';
+            }
+        }
+        
+        setInterval(openClose, 5000);
+        openClose();
+        
+        
+</script>
+<script>
+
+    // Biblioteca Prepa Sur Display Abierto-Cerrado
+        function isOpen(timeRangeEl, date) {
+            var day = '' + date.getDay();
+            var hhmm = ('0' + date.getHours()).slice(-2) + ':' + ('0' + date.getMinutes()).slice(-2);
+        
+            var days = timeRangeEl.getAttribute('data-days');
+            var openTime = timeRangeEl.getAttribute('data-open');
+            var closeTime = timeRangeEl.getAttribute('data-close');
+            return days.indexOf(day) >= 0 && openTime <= hhmm && hhmm < closeTime;
+        }
+        
+        function openClose() {
+            var date = new Date();
+            var display = document.getElementById('open-display-24');
+            var els = display.getElementsByClassName('timerange');
+            var anyActive = false;
+            for (var i = 0; i < els.length; i++) {
+                if (isOpen(els[i], date)) {
+                    anyActive = true;
+                    els[i].className = els[i].className.replace(/ *inactive\b/g, '');
+                } else if (els[i].className.indexOf('inactive') < 0) {
+                    els[i].className += ' inactive';
+                }
+            }
+            if (anyActive) {
+                display.className = 'open';
+            } else {
+                display.className = 'closed';
+            }
+        }
+        
+        setInterval(openClose, 5000);
+        openClose();
+        
+        
+</script>
+<script>
+
+    // Biblioteca Prepa Bicentenario Display Abierto-Cerrado
+        function isOpen(timeRangeEl, date) {
+            var day = '' + date.getDay();
+            var hhmm = ('0' + date.getHours()).slice(-2) + ':' + ('0' + date.getMinutes()).slice(-2);
+        
+            var days = timeRangeEl.getAttribute('data-days');
+            var openTime = timeRangeEl.getAttribute('data-open');
+            var closeTime = timeRangeEl.getAttribute('data-close');
+            return days.indexOf(day) >= 0 && openTime <= hhmm && hhmm < closeTime;
+        }
+        
+        function openClose() {
+            var date = new Date();
+            var display = document.getElementById('open-display-25');
+            var els = display.getElementsByClassName('timerange');
+            var anyActive = false;
+            for (var i = 0; i < els.length; i++) {
+                if (isOpen(els[i], date)) {
+                    anyActive = true;
+                    els[i].className = els[i].className.replace(/ *inactive\b/g, '');
+                } else if (els[i].className.indexOf('inactive') < 0) {
+                    els[i].className += ' inactive';
+                }
+            }
+            if (anyActive) {
+                display.className = 'open';
+            } else {
+                display.className = 'closed';
+            }
+        }
+        
+        setInterval(openClose, 5000);
+        openClose();
+        
+        
+</script>
+<script>
+    /*vacaciones semana santa
+Show/hide notice and message div elements based on start and end times
+2017-11-29T23:00:00Z / year - month - dates T hours : minutes : seconds
+*/
+function displayMaintenance() {
+    var currentTime = new Date();
+    
+    var startNoticeTime = new Date("2023-04-03T00:00:00");
+    var endNoticeTime = new Date("2023-04-03T00:00:00");
+   
+
+    if (currentTime.getTime() > startNoticeTime.getTime() && currentTime.getTime() <= endNoticeTime.getTime()) {
+        $('.offline-notice').show();
+        $('.openclosed').hide();
+        $('.timerange').hide();
+
+    } else if (currentTime.getTime() > endNoticeTime.getTime) {
+        $('.offline-notice').hide();
+    }
+
+}
+
+// Invoke displayMaintenance()
+displayMaintenance();
+</script>
+
+<script>
+    /*puentes de mayo
+Show/hide notice and message div elements based on start and end times
+2017-11-29T23:00:00Z / year - month - dates T hours : minutes : seconds
+*/
+function displayMaintenance() {
+    var currentTime = new Date();
+    
+    var startNoticeTime = new Date("2023-05-01T00:00:00");
+    var endNoticeTime = new Date("2023-05-02T00:00:00");
+   
+
+    if (currentTime.getTime() > startNoticeTime.getTime() && currentTime.getTime() <= endNoticeTime.getTime()) {
+        $('.offline-notice').show();
+        $('.openclosed').hide();
+
+    } else if (currentTime.getTime() > endNoticeTime.getTime) {
+        $('.offline-notice').hide();
+    }
+
+}
+
+// Invoke displayMaintenance()
+displayMaintenance();
+
+         
+</script>
+</body>
+</html>
 
