@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://kit.fontawesome.com/322f0589ec.js" crossorigin="anonymous"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<title>Credencial Virtual de Egresados</title>
+<style type="text/css">
+p{font-size:1rem;font-family:Montserrat;margin-bottom:1rem;font-weight:400;line-height:1.5;color:#424753;text-align:justify;display:block;margin-block-start:1em;margin-block-end:1em;margin-inline-start:0px;margin-inline-end:0px;}
+.container{
+  width:100%;text-align:justify;
+    padding:15px;
+    margin-right: auto;
+    margin-left: auto;max-width:900px;margin-top:-15px}
+
+	h1{font-family:Montserrat;font-size:2.25rem;margin-bottom: 0.5rem;
+    font-weight: 700;
+    line-height: 1.2;
+    color: #424753;margin-top: 0;
+	display: block;
+    margin-block-start: 0.67em;
+    margin-block-end: 0.67em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;text-align: center;}
+
+    h2{font-family:Montserrat;font-size:2rem;margin-bottom: 0.5rem;
+    font-weight: normal;
+    line-height: 1.2;
+    color: #424753;margin-top: 0;
+	display: block;
+    margin-block-start: 0.67em;
+    margin-block-end: 0.67em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;text-align: center;}
+
+	html{-webkit-text-size-adjust: 100%;
+    -webkit-tap-highlight-color: rgba(0,0,0,0);}
+
+	p2{font-size:1rem;font-family:Montserrat;margin-bottom:1rem;font-weight:400;line-height:1.5;color:#424753;text-align:justify;display:block;margin-block-start:1em;margin-block-end:1em;margin-inline-start:0px;margin-inline-end:0px;margin-left:20px;margin-right:20px}
+
+	p3{font-size:.9rem;font-family:Montserrat;font-weight:400;line-height:1.5;color:#424753;text-align:center;display:block;max-width:300px}
+
+	p4{font-weight: bold;color:#424753;font-size:1rem;font-family:Montserrat;margin-bottom:1rem;;line-height:1.5}
+	a {font-weight:bold;text-decoration: none;color:#424753}
+
+#OpacNavRight {display:none}
+div.col-12.col-lg-3.order-md-2 {display:none}
+  
+
+
+
+.flip-card {
+  background-color: transparent;
+  width: 230px;
+  height: 230px;
+  border: 1px solid #f1f1f1;
+  perspective: 1000px; /* Remove this if you don't want the 3D effect */
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform .8s;
+  transform-style: preserve-3d;
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(-360deg);
+}
+
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden; /* Safari */
+  backface-visibility: hidden; border-radius:50%;
+  bsorder:3px solid black;
+  filter: drop-shadow(rgba(0, 0, 0, 0.14) 0px 2px 2px) drop-shadow(rgba(0, 0, 0, 0.12) 0px -2px 2px) drop-shadow(rgba(0, 0, 0, 0.2) 0px 1px 5px);
+}
+
+.flip-card-back {
+  background-color: #f27576;
+  background-image:url('https://bibliotecasuaq.github.io/dgbsdi-site/micrositio/quienessomos/logodgbsdicircular.png');
+  background-size: 30%;
+  background-repeat: no-repeat;
+  background-position: center;
+  color: white;
+  transform: rotateY(180deg);border-radius:50%;
+}
+
+  @media screen and (min-width: 768px){
+  #moresearches{display:none}
+  #opac-main-search{display:none}
+  .navdgb {height: 130px!important;}
+  
+}
+
+ul {
+    display:flex;
+    columns: 2;
+    -webkit-columns: 2;
+    -moz-columns: 2;
+    list-style:disc;
+    list-style-type: none;
+    margin: 0 0 1.5em 1em;
+}
+
+.staff-container {
+    display:flex;
+    list-style-type: none;
+    margin-top: 100px;
+    padding-left: 0;
+    margin-left: 0;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: top;
+    justify-content: space-evenly;
+    gap: 70px;
+    
+}
+
+.staff-globe {
+   
+    align-items: center;
+    display:grid;
+    grid-template-columns:1fr 2fr;
+    justify-items:start;
+    
+    
+}
+
+.staff-globo-text {margin-top:1rem;max-width:250px}
+body {margin:0}
+
+</style>
+</head>
+<body>
+    
+<div class="container">
+
+<h1>Staff</h1>
+<h2>Dirección General de Bibliotecas y Servicios<br>Digitales de Información</h2>
+
+<!-- COORDINADORES-->
+
+<ul class="staff-container">
+
+
+
+<li class="staff-globo">
+  <div class="flip-card" style="
+      margin-left: auto;
+      margin-right: auto;border:none">
+        <div class="flip-card-inner">
+          <div class="flip-card-front" style="object-fit:cover;background-image:url('https://bibliotecasuaq.github.io/dgbsdi-site/micrositio/staff/Lupita-restauracion.jpg');background-size:cover;background-position-y:27%">
+  </div>
+  <div class="flip-card-back"></div></div></div>
+  <div class="staff-globo-text">
+    <p3><strong>Lic. Guadalupe Pacheco Castro</strong>
+      Coordinación de Restauración y Conservación Documental<br>
+      <span class="list-email"><a class="email" href="mailto:admin.bib@uaq.edu.mx" aria-label="email" title="Correo"></span>
+        <i class="fa-solid fa-envelope" aria-hidden="true"></i> restauracion.bib@uaq.edu.mx</a></span><br>
+      <span class="list-phone"><a class="phone-link" href="" aria-label="Teléfonos" title="Teléfonos"></span>
+    <i class="fa-solid fa-phone" aria-hidden="true"></i></a> (442) 192-12-00 Ext.3511</span></p3>
+    </div>
+  
+</li>
+
+<li class="staff-globo">
+  <div class="flip-card" style="
+      margin-left: auto;
+      margin-right: auto;border:none">
+        <div class="flip-card-inner">
+          <div class="flip-card-front" style="object-fit:cover;background-image:url('https://bibliotecasuaq.github.io/dgbsdi-site/micrositio/staff/Dalya-admin.jpg');background-size:cover;background-position-y:0%">
+  </div>
+  <div class="flip-card-back"></div></div></div>
+  <div class="staff-globo-text">
+    <p3><strong>Mtra. Dalya Itzel Hernández Gutiérrez</strong><br>
+    Coordinadora Administrativa<br>
+      <span class="list-email"><a class="email" href="mailto:admin.bib@uaq.edu.mx" aria-label="email" title="Correo"></span>
+        <i class="fa-solid fa-envelope" aria-hidden="true"></i> admin.bib@uaq.edu.mx</a></span><br>
+      <span class="list-phone"><a class="phone-link" href="" aria-label="Teléfonos" title="Teléfonos"></span>
+    <i class="fa-solid fa-phone" aria-hidden="true"></i></a> (442) 192-12-00 Ext.3515</span></p3>
+    </div>
+  
+</li>
+
+<li class="staff-globo">
+  <div class="flip-card" style="
+      margin-left: auto;
+      margin-right: auto;border:none">
+        <div class="flip-card-inner">
+          <div class="flip-card-front" style="object-fit:cover;background-image:url('https://bibliotecasuaq.github.io/dgbsdi-site/micrositio/quienessomos/logodgbsdicircular.png');background-size:cover;background-position-y:50%">
+  </div>
+  <div class="flip-card-back"></div></div></div>
+  <div class="staff-globo-text">
+    <p3><strong>Lic. Omar Caloca Lafont</strong><br>
+      Coordinación de Vinculación y Promoción Cultural<br>
+      <span class="list-email"><a class="email" href="mailto:admin.bib@uaq.edu.mx" aria-label="email" title="Correo"></span>
+        <i class="fa-solid fa-envelope" aria-hidden="true"></i> vinculacion.bib@uaq.edu.mx</a></span><br>
+      <span class="list-phone"><a class="phone-link" href="" aria-label="Teléfonos" title="Teléfonos"></span>
+    <i class="fa-solid fa-phone" aria-hidden="true"></i></a> (442) 192-12-00 Ext.3506</span></p3>
+    </div>
+  
+</li>
+
+<li class="staff-globo">
+  <div class="flip-card" style="
+      margin-left: auto;
+      margin-right: auto;border:none">
+        <div class="flip-card-inner">
+          <div class="flip-card-front" style="object-fit:cover;background-image:url('https://bibliotecasuaq.github.io/dgbsdi-site/micrositio/staff/Rubén-colecciones.jpg');background-size:cover;background-position-y:50%">
+  </div>
+  <div class="flip-card-back"></div></div></div>
+  <div class="staff-globo-text">
+    <p3><strong>Mtro. Rubén Cantor Pérez</strong><br>
+      Coordinación de Gestión de Colecciones<br>
+      <span class="list-email"><a class="email" href="mailto:admin.bib@uaq.edu.mx" aria-label="email" title="Correo"></span>
+        <i class="fa-solid fa-envelope" aria-hidden="true"></i> colecciones.bib@uaq.edu.mx</a></span><br>
+      <span class="list-phone"><a class="phone-link" href="" aria-label="Teléfonos" title="Teléfonos"></span>
+    <i class="fa-solid fa-phone" aria-hidden="true"></i></a> (442) 192-12-00 Ext.3517</span></p3>
+    </div>
+  
+</li>
+
+<li class="staff-globo">
+  <div class="flip-card" style="
+      margin-left: auto;
+      margin-right: auto;border:none">
+        <div class="flip-card-inner">
+          <div class="flip-card-front" style="object-fit:cover;background-image:url('https://bibliotecasuaq.github.io/dgbsdi-site/micrositio/staff/Sergio-ti2.jpg');background-size:cover;background-position-y:0%;background-position-x:45%;">
+  </div>
+  <div class="flip-card-back"></div></div></div>
+  <div class="staff-globo-text">
+    <p3><strong>Mtro. Sergio Castañeda Olvera</strong><br>
+      Coordinación de Tecnologías de la Información<br>
+      <span class="list-email"><a class="email" href="mailto:admin.bib@uaq.edu.mx" aria-label="email" title="Correo"></span>
+        <i class="fa-solid fa-envelope" aria-hidden="true"></i> sistemas.bib@uaq.edu.mx</a></span><br>
+      <span class="list-phone"><a class="phone-link" href="" aria-label="Teléfonos" title="Teléfonos"></span>
+    <i class="fa-solid fa-phone" aria-hidden="true"></i></a> (442) 192-12-00 Ext.3514</span></p3>
+    </div>
+  
+</li>
+
+<!-- RESPONSABLES-->
+</ul>
+
+<ul class="staff-container">
+
+
+  
+  <li class="staff-globo">
+    <div class="flip-card" style="
+        margin-left: auto;
+        margin-right: auto;border:none">
+          <div class="flip-card-inner">
+            <div class="flip-card-front" style="object-fit:cover;background-image:url('https://bibliotecasuaq.github.io/dgbsdi-site/micrositio/staff/Yuri-procesos.jpeg');background-size:cover;background-position-y:15%;background-position-x:10px">
+    </div>
+    <div class="flip-card-back"></div></div></div>
+    <div class="staff-globo-text">
+      <p3><strong>Lic. Yuridiana Rodríguez Ramírez</strong><br>
+        Responsable de Catalogación y Clasificación<br>
+        <span class="list-email"><a class="email" href="mailto:procesos.bib@uaq.edu.mx" aria-label="email" title="Correo"></span>
+          <i class="fa-solid fa-envelope" aria-hidden="true"></i> procesos.bib@uaq.edu.mx</a></span><br>
+        <span class="list-phone"><a class="phone-link" href="" aria-label="Teléfonos" title="Teléfonos"></span>
+      <i class="fa-solid fa-phone" aria-hidden="true"></i></a> (442) 192-12-00 Ext.3512</span></p3>
+      </div>
+    
+  </li>
+  
+  <li class="staff-globo">
+    <div class="flip-card" style="
+        margin-left: auto;
+        margin-right: auto;border:none">
+          <div class="flip-card-inner">
+            <div class="flip-card-front" style="object-fit:cover;background-image:url('https://bibliotecasuaq.github.io/dgbsdi-site/micrositio/staff/Andrea-enlace.jpg');background-size:cover;background-position-y:70%">
+    </div>
+    <div class="flip-card-back"></div></div></div>
+    <div class="staff-globo-text">
+      <p3><strong>Lic. Andrea Monroy Hernández</strong><br>
+      Enlace Bibliotecario<br>
+        <span class="list-email"><a class="email" href="mailto:enlace.bib@uaq.edu.mx" aria-label="email" title="Correo"></span>
+          <i class="fa-solid fa-envelope" aria-hidden="true"></i> enlace.bib@uaq.edu.mx</a></span><br>
+        <span class="list-phone"><a class="phone-link" href="" aria-label="Teléfonos" title="Teléfonos"></span>
+      <i class="fa-solid fa-phone" aria-hidden="true"></i></a> (442) 192-12-00 Ext.3513</span></p3>
+      </div>
+    
+</li>
+  
+  
+  <li class="staff-globo">
+    <div class="flip-card" style="
+        margin-left: auto;
+        margin-right: auto;border:none">
+          <div class="flip-card-inner">
+            <div class="flip-card-front" style="object-fit:cover;background-image:url('https://bibliotecasuaq.github.io/dgbsdi-site/micrositio/staff/Gabriela-calidad.jpeg');background-size:cover;background-position-y:30%">
+    </div>
+    <div class="flip-card-back"></div></div></div>
+    <div class="staff-globo-text">
+      <p3><strong>Mtra. Laura Gabriela Villalpando Cabrera</strong><br>
+        Responsable de Calidad<br>
+        <span class="list-email"><a class="email" href="mailto:admin.bib@uaq.edu.mx" aria-label="email" title="Correo"></span>
+          <i class="fa-solid fa-envelope" aria-hidden="true"></i> calidad.bib@uaq.edu.mx</a></span><br>
+        <span class="list-phone"><a class="phone-link" href="" aria-label="Teléfonos" title="Teléfonos"></span>
+      <i class="fa-solid fa-phone" aria-hidden="true"></i></a> (442) 192-12-00 Ext.3513</span></p3>
+      </div>
+    
+  </li>
+
+  <li class="staff-globo">
+    <div class="flip-card" style="
+        margin-left: auto;
+        margin-right: auto;border:none">
+          <div class="flip-card-inner">
+            <div class="flip-card-front" style="object-fit:cover;background-image:url('https://bibliotecasuaq.github.io/dgbsdi-site/micrositio/staff/Martha-difusion.jpeg');background-size:120%;background-position-y:0%;background-position-x:40%">
+    </div>
+    <div class="flip-card-back"></div></div></div>
+    <div class="staff-globo-text">
+      <p3><strong>Lic. Martha Aparicio López</strong><br>
+        Difusión<br>
+        <span class="list-email"><a class="email" href="mailto:admin.bib@uaq.edu.mx" aria-label="email" title="Correo"></span>
+          <i class="fa-solid fa-envelope" aria-hidden="true"></i> atencion.bib@uaq.edu.mx</a></span><br>
+        <span class="list-phone"><a class="phone-link" href="" aria-label="Teléfonos" title="Teléfonos"></span>
+      <i class="fa-solid fa-phone" aria-hidden="true"></i></a> (442) 192-12-00 Ext.3513</span></p3>
+      </div>
+    
+  </li>
+
+  <li class="staff-globo">
+    <div class="flip-card" style="
+        margin-left: auto;
+        margin-right: auto;border:none">
+          <div class="flip-card-inner">
+            <div class="flip-card-front" style="object-fit:cover;background-image:url('https://bibliotecasuaq.github.io/dgbsdi-site/micrositio/staff/Jorge-referencia.jpeg');background-size:85%;background-position-y:0%;background-position-x:60%">
+    </div>
+    <div class="flip-card-back"></div></div></div>
+    <div class="staff-globo-text">
+      <p3><strong>Lic. José Jorge Ramírez Vázquez</strong><br>
+        Servicio de referencia<br>
+        <span class="list-email"><a class="email" href="mailto:admin.bib@uaq.edu.mx" aria-label="email" title="Correo"></span>
+          <i class="fa-solid fa-envelope" aria-hidden="true"></i> naturales.bib@uaq.edu.mx</a></span><br>
+        <span class="list-phone"><a class="phone-link" href="" aria-label="Teléfonos" title="Teléfonos"></span>
+      <i class="fa-solid fa-phone" aria-hidden="true"></i></a> (442) 192-12-00 Ext.5919</span></p3>
+      </div>
+    
+  </li>
+  
+  <li class="staff-globo">
+    <div class="flip-card" style="
+        margin-left: auto;
+        margin-right: auto;border:none">
+          <div class="flip-card-inner">
+            <div class="flip-card-front" style="object-fit:cover;background-image:url('https://bibliotecasuaq.github.io/dgbsdi-site/micrositio/staff/Jacqueline-difusion.jpg');background-size:cover;background-position-y:30%">
+    </div>
+    <div class="flip-card-back"></div></div></div>
+    <div class="staff-globo-text">
+      <p3><strong>Mtra. Jacqueline Callejas Ramirez</strong><br>
+        Diseño e Imagen<br>
+        <span class="list-email"><a class="email" href="mailto:admin.bib@uaq.edu.mx" aria-label="email" title="Correo"></span>
+          <i class="fa-solid fa-envelope" aria-hidden="true"></i> difusion.bib@uaq.edu.mx</a></span><br>
+        <span class="list-phone"><a class="phone-link" href="" aria-label="Teléfonos" title="Teléfonos"></span>
+      <i class="fa-solid fa-phone" aria-hidden="true"></i></a> (442) 192-12-00 Ext.3513</span></p3>
+      </div>
+    
+  </li>
+
+  <li class="staff-globo">
+    <div class="flip-card" style="
+        margin-left: auto;
+        margin-right: auto;border:none">
+          <div class="flip-card-inner">
+            <div class="flip-card-front" style="object-fit:cover;background-image:url('rilogo.jpg');background-size:80%;background-repeat:no-repeat;background-position-y:40%;background-position-x:35%;box-shadow: 0px 0px 50px -20px rgba(0,0,0,0.75);filter:none">
+    </div>
+    <div class="flip-card-back"></div></div></div>
+    <div class="staff-globo-text">
+      <p3><strong>Repositorio Institucional</strong><br>
+        TESIUAQ<br>
+        <span class="list-email"><a class="email" href="mailto:admin.bib@uaq.edu.mx" aria-label="email" title="Correo"></span>
+          <i class="fa-solid fa-envelope" aria-hidden="true"></i> ri.bib@uaq.edu.mx</a></span><br>
+        <span class="list-phone"><a class="phone-link" href="" aria-label="Teléfonos" title="Teléfonos"></span>
+      <i class="fa-solid fa-phone" aria-hidden="true"></i></a> (442) 192-12-00 Ext.3514</span></p3>
+      </div>
+    
+  </li>
+
+ 
+  
+  
+  </ul>
+
+
+</div>
+
+</body>
+</html>
