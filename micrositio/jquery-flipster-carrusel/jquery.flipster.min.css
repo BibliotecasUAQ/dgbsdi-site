@@ -55,7 +55,7 @@ button, input, optgroup, select, textarea {
     white-space:normal;
     word-spacing:normal;
     vertical-align:bottom;
-    width: 300px;
+    max-width: 300px;
 }
 .flipster--click .flipster__item--past,.flipster--click .flipster__item--future{
     cursor:pointer
