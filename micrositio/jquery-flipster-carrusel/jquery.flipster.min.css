@@ -317,3 +317,33 @@ button, input, optgroup, select, textarea {
 .flipster--wheel .flip-current .flipster__item__content{
     transform:rotateX(0deg)
 }
+/* PRUEBA PARA NAV DE CIRCULOS EN LUGAR DE NUMEROS*/
+.flipster__nav { 
+    display: flex; 
+    justify-content: center; 
+    gap: 10px; 
+    margin-top: 15px; 
+    padding: 0; 
+    list-style: none; 
+}
+
+.flipster__nav a {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    background-color: #ccc; /* Color de las bolitas inactivas */
+    border-radius: 50%;
+    text-indent: -9999px; /* Oculta el texto */
+    overflow: hidden;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.flipster__nav a.current {
+    background-color: #007bff; /* Color de la bolita activa */
+}
+
+.flipster__nav__link {
+    padding:0
+}
+
