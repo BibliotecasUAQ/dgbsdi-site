@@ -347,3 +347,14 @@ button, input, optgroup, select, textarea {
     padding:0
 }
 
+/* AJUSTE A BOTONES PREV Y NEXT */
+
+.flipster__button svg {
+    width: 4em;
+    stroke: rgb(255 255 255);
+    fill: #00000000;
+    stroke-width: 1;
+    stroke-linecap: round;
+    filter: drop-shadow(rgba(0, 0, 0, 0.5) 0px 2px 2px) drop-shadow(rgba(0, 0, 0, 0.5) 0px -2px 2px) drop-shadow(rgba(0, 0, 0, 0.5) 0px 1px 5px);
+}
+
