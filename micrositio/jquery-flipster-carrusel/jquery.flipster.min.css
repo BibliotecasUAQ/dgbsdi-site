@@ -19,7 +19,9 @@ button, input, optgroup, select, textarea {
     max-width: 100%;
     flex-grow: 0;
     flex-basis: 100%;
-    background: linear-gradient(153deg, rgba(252, 253, 253, 1) 0%, rgba(23, 87, 107, 1) 30%, rgba(0, 51, 84, 1) 45%, rgba(0, 51, 84, 1) 67%, rgba(110, 124, 132, 0.6769301470588236) 92%);
+    border-radius: 10px;
+    /*background: linear-gradient(153deg, rgba(252, 253, 253, 1) 0%, rgba(23, 87, 107, 1) 30%, rgba(0, 51, 84, 1) 45%, rgba(0, 51, 84, 1) 67%, rgba(110, 124, 132, 0.6769301470588236) 92%);*/
+    background: linear-gradient(150deg, #fcfdfd 0%, #6bcaba 15%, #5fc0b4 20%, #56b6af 25%, #4eaba9 30%, #45a0a3 35%, #3d949d 40%, #358997 45%, #2d7d91 48%, #26728b 49%, #1f6785 50%, /* Azul perfectamente centrado */ #1a5d7f 51%, #155279 52%, #124d69 55%, #1b667b 60%, #2a7a8d 65%, #3b8d9e 70%, #4aa0a7 75%, #56b6af 80%, #5fc0b4 85%, #6bcaba 90%, #fcfdfd 100%);
 }
 #flipster-particle {
     margin: 0.625rem;
